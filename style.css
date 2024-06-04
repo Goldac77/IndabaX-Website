@@ -1,0 +1,55 @@
+@layer utilities {
+    /*Footer styling*/
+    .footer {
+        font-family: Inter;
+    }
+
+    .footer-links li {
+        margin: 16px 0;
+    }
+
+    .footer-md img {
+        width: clamp(110px, 60%, 200px);
+        height: clamp(57px, 50%, 103px);
+    }
+
+    /*Nav Bar*/
+    #modal,
+    header {
+        font-family: Inter;
+    }
+
+    /*Schedule page*/
+    @font-face {
+        font-family: RBNo;
+        src: url("./font/RBNo3.1-Bold.otf");
+      }
+
+      #tab1,
+      #tab2,
+      #tab3 {
+        font-family: RBNo;
+      }
+
+      .body-p {
+        font-size: clamp(12px, 3vw, 24px);
+      }
+
+      .pres-name {
+        font-size: clamp(8px, 2vw, 16px);
+      }
+
+      .body img {
+        width: clamp(79px, 30%, 167px);
+        height: auto;
+      }
+
+      .bb img {
+        width: clamp(51px, 70%, 167px);
+        height: auto;
+      }
+
+      p {
+        font-family: Inter;
+      }
+}
