@@ -1,55 +1,97 @@
 @layer utilities {
-    /*Footer styling*/
-    .footer {
-        font-family: Inter;
-    }
+  /*Footer styling*/
+  .footer {
+    font-family: Inter;
+  }
 
-    .footer-links li {
-        margin: 16px 0;
-    }
+  .footer-links li {
+    margin: 16px 0;
+  }
 
-    .footer-md img {
-        width: clamp(110px, 60%, 200px);
-        height: clamp(57px, 50%, 103px);
-    }
+  .footer-md img {
+    width: clamp(110px, 60%, 200px);
+    height: clamp(57px, 50%, 103px);
+  }
 
-    /*Nav Bar*/
-    #modal,
-    header {
-        font-family: Inter;
-    }
+  /*Nav Bar*/
+  #modal,
+  header {
+    font-family: Inter;
+  }
 
-    /*Schedule page*/
-    @font-face {
-        font-family: RBNo;
-        src: url("./font/RBNo3.1-Bold.otf");
-      }
+  /*Schedule page*/
+  @font-face {
+    font-family: RBNo;
+    src: url("./font/RBNo3.1-Bold.otf");
+    src: url("./font/RBNo3.1-Thin.otf");
+  }
 
-      #tab1,
-      #tab2,
-      #tab3 {
-        font-family: RBNo;
-      }
+  @font-face {
+    font-family: RBNo;
+    src: url("./font/RBNo3.1-Thin.otf");
+    font-weight: 100;
+  }
 
-      .body-p {
-        font-size: clamp(12px, 3vw, 24px);
-      }
+  #tab1,
+  #tab2,
+  #tab3 {
+    font-family: RBNo;
+  }
 
-      .pres-name {
-        font-size: clamp(8px, 2vw, 16px);
-      }
+  .body-p {
+    font-size: clamp(12px, 3vw, 24px);
+  }
 
-      .body img {
-        width: clamp(79px, 30%, 167px);
-        height: auto;
-      }
+  .pres-name {
+    font-size: clamp(8px, 2vw, 16px);
+  }
 
-      .bb img {
-        width: clamp(51px, 70%, 167px);
-        height: auto;
-      }
+  .body img {
+    width: clamp(79px, 30%, 167px);
+    height: auto;
+  }
 
-      p {
-        font-family: Inter;
-      }
+  .bb img {
+    width: clamp(51px, 70%, 167px);
+    height: auto;
+  }
+
+  p {
+    font-family: Inter;
+  }
+
+  /*Home page*/
+  #faq {
+    font-family: Inter;
+  }
+
+  body {
+    font-family: Inter;
+  }
+
+  #ghana-p {
+    font-family: RBNo;
+    font-size: clamp(33px, 4vw, 46px) !important;
+  }
+
+  #happens {
+    font-size: clamp(33px, 4vw, 46px) !important;
+  }
+
+  #home-speaker p, #home-event p {
+    font-size: clamp(18px, 1.5vw, 16px);
+  }
+
+  #home-section img {
+    width: clamp(32px, 100%, 48px);
+    height: auto;
+  }
+
+  #home-section p {
+    font-size: clamp(12px, 1rem, 24px);
+  }
+
+  #why-sponsor p {
+    font-size: clamp(6px, 1rem, 16px);
+  }
 }
