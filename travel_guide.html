@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/4d1dcfb835.js" crossorigin="anonymous"></script>
+    <title>Travel Guide</title>
+</head>
+
+<body>
+    <!-- header -->
+    <section class="px-10 sticky top-0 bg-white z-[999]">
+        <header class="flex w-full items-center justify-between my-8 max-w-[1300px] m-auto">
+            <!-- logo -->
+            <div class="flex items-center gap-1">
+                <img src="./images/logo.png" alt="logo" class="inline" />
+                <div>
+                    <span class="block text-[#DE0220] leading-[1]">Ghana</span>
+                    <span class="block text-[#000D30] leading-[1]">Data Science</span>
+                    <span class="block text-[#000D30] leading-[1]">Summit 2024</span>
+                </div>
+            </div>
+            <!-- biggger screen nav-->
+            <nav class="flex flex-row justify-between hidden md:inline-block w-full max-w-[1000px]">
+                <ul class="flex items-center w-full justify-around">
+                    <li>
+                        <a class="text-[#000D30] text-xl" href="./schedule.html">Schedule</a>
+                    </li>
+                    <li>
+                        <a class="text-[#000D30] text-xl" href="./speakers.html">Speakers</a>
+                    </li>
+                    <li>
+                        <a class="text-[#000D30] text-xl" href="./travel_guide.html">Travel Guide</a>
+                    </li>
+                    <li>
+                        <a class="text-[#000D30] text-xl" href="./gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a class="text-[#FFFFFF] text-xl bg-[#DE0220] py-[16px] px-[32px] font-normal" href="/register">Register</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- mobile screen nav humb -->
+            <div id="openModalBtn"
+                class="bg-[#000D30] rounded flex flex-col gap-1 p-2 cursor-pointer absolute right-8 md:hidden w-[40px]">
+                <div class="h-0.5 my-[2px] w-full px-2 bg-white rounded-sm"></div>
+                <div class="h-0.5 my-[2px] w-full px-2 bg-white rounded-sm"></div>
+                <div class="h-0.5 my-[2px] w-full px-2 bg-white rounded-sm"></div>
+            </div>
+        </header>
+        <!-- modal mobile screen -->
+        <div id="modal" class="fixed inset-0 hidden items-center justify-end transition-opacity duration-300 z-[999]">
+            <div id="modalContent"
+                class="bg-[#000D30] w-2/3 h-full mt-20 transform translate-x-full transition-transform duration-300">
+                <div class="flex justify-end p-4">
+                    <!-- <h2 class="text-xl font-semibold">Modal Title</h2> -->
+                    <button id="closeModalBtn" class="text-white text-xl flex-end">
+                        <i class="fa-solid fa-xmark fa-2xl"></i>
+                    </button>
+                </div>
+                <div class="p-8">
+                    <ul class="text-white text-xl font-extralight flex flex-col gap-6">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./schedule.html">Schedule</a></li>
+                        <li><a href="./speakers.html">Speakers</a></li>
+                        <li><a href="./travel_guide.html">Travel Guide</a></li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="travel-header" class="max-w-[827px] text-[#000D30] text-center m-auto">
+        <p class="hidden md:block">
+            The Golden City: A Travel Guide to <br />
+            Kumasi, Ghana
+        </p>
+        <p class="md:hidden">
+            The Golden City: A Travel Guide to Kumasi, Ghana
+        </p>
+        <br />
+        <span>Culture, Food, Sights, Sounds and Experiences of Kumasi.</span>
+    </div>
+
+    <main class="max-w-[1294px] m-auto">
+        <div class="bg-[#000D30] max-w-[1294px] h-[2px] mx-5 my-10"></div>
+        <p id="travel-p-head" class="my-5 px-5 text-[#000D30]">
+            Brief History of the City
+        </p>
+        <div class="flex flex-col md:flex-row justify-around gap-8 px-5 my-5">
+            <img class="w-full" src="./images/travel_img_1.png" alt="travel_img_1" />
+            <img class="w-full" src="./images/travel_img_2.png" alt="travel_img_2" />
+        </div>
+        <div class="px-5 my-10">
+            <p>
+                Kumasi, often referred to as the "Garden City" due to its lush
+                greenery and rich cultural heritage, is the second-largest city in
+                Ghana, located in the Ashanti Region. Its history spans centuries,
+                intertwining with the rise and fall of various West African empires
+                and colonial powers. <br />
+                <br />
+
+                The roots of Kumasi trace back to the Ashanti Empire, one of the most
+                powerful and influential kingdoms in West Africa during the 17th to
+                19th centuries. Founded by King Osei Tutu in the late 17th century,
+                Kumasi became the capital of the Ashanti Empire and a center of trade,
+                culture, and military prowess. The city's strategic location allowed
+                it to thrive as a hub for the gold trade, attracting merchants from
+                across the region and beyond. <br />
+                <br />
+
+                Under the leadership of legendary kings like Osei Tutu, Opoku Ware I,
+                and Nana Prempeh I, Kumasi flourished as a political and cultural
+                center. The Ashanti Kingdom's formidable military might and diplomatic
+                acumen enabled it to resist European colonization longer than many
+                other African states. <br />
+                <br />
+
+                However, in the late 19th century, the Ashanti Kingdom faced
+                increasing pressure from British colonial forces seeking to control
+                the region's resources and trade routes. After several conflicts,
+                including the Anglo-Ashanti Wars, Kumasi fell under British control in
+                1901, leading to the annexation of the Ashanti Kingdom into the
+                British Gold Coast colony. <br />
+                <br />
+
+                Despite colonial rule, Kumasi retained its cultural identity and
+                significance as an economic center. The British established
+                administrative structures in the city, contributing to its urban
+                development and infrastructure. Kumasi's importance as a trading post
+                and agricultural hub continued to grow, bolstered by its vibrant
+                markets and industries. <br />
+                <br />
+
+                Following Ghana's independence from British rule in 1957, Kumasi
+                emerged as a key player in the country's political and economic
+                landscape. It remains an essential center for commerce, education, and
+                administration in Ghana, with a diverse population representing
+                various ethnicities and cultures. <br />
+                <br />
+
+                Today, Kumasi stands as a vibrant metropolis, blending modernity with
+                tradition. Its streets bustle with activity, from bustling markets
+                selling a myriad of goods to lively festivals celebrating Ashanti
+                culture and heritage. Landmarks such as the Manhyia Palace, the
+                Asantehene's royal residence, and the Kejetia Market, one of the
+                largest open-air markets in West Africa, reflect Kumasi's rich history
+                and enduring significance. <br />
+                <br />
+
+                As Ghana's cultural heartbeat and economic engine, Kumasi continues to
+                evolve while preserving its unique identity and contributions to the
+                nation's narrative. Its legacy as a beacon of resilience, ingenuity,
+                and community spirit endures, shaping the city's future as it marches
+                forward into the 21st century and beyond.
+            </p>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <section class="footer bg-[#000D30] py-16 md:py-28 px-5 md:px-20 text-white">
+        <!--Mobile footer-->
+        <div class="md:hidden">
+            <div class="flex flex-row w-[110px]">
+                <img loading="lazy" src="./images/gdss-new-logo 1.png" alt="gdss-new-logo" />
+                <img class="ml-12" loading="lazy" src="./images/indabax 1.png" alt="indabax logo" />
+            </div>
+
+            <div class="footer-links mt-16 max-w-[230px]">
+                <p class="font-bold text-xl">Useful Links</p>
+                <div class="font-extralight flex flex-row justify-between mt-9 text-base">
+                    <ul>
+                        <li>
+                            <a href="#">Schedule</a>
+                        </li>
+                        <li>
+                            <a href="#">Speakers</a>
+                        </li>
+                        <li>
+                            <a href="#">Travel</a>
+                        </li>
+                        <li>
+                            <a href="#">Gallery</a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <a href="#">Sponsors</a>
+                        </li>
+                        <li>
+                            <a href="#">Mentorship</a>
+                        </li>
+                        <li>
+                            <a href="#">News</a>
+                        </li>
+                        <li>
+                            <a href="#">Past Events</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="socials max-w-[316px] mt-[72px]">
+                <ul class="flex flex-row justify-between m-auto">
+                    <li class="flex justify-center">
+                        <a class="flex justify-center" href="#"><img class="w-full m-auto"
+                                src="./images/devicon_twitter.png" alt="x_twitter icon" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="w-full" src="./images/mdi_linkedin.png" alt="linkedin icon" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="w-full" src="./images/ri_instagram-line.png" alt="instagram icon" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="w-full" src="./images/mingcute_youtube-line.png"
+                                alt="youtube icon" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="w-full" src="./images/mdi_facebook.png" alt="facebook icon" /></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="copyright font-extralight text-xs mt-[72px]">
+                <p>Ghana Data Science Summit 2024 | All Rights Reserved</p>
+            </div>
+        </div>
+
+        <!--Desktop footer-->
+        <div class="footer-md hidden md:block">
+            <div class="flex flex-row justify-between max-w-[1400px]">
+                <div class="flex flex-row w-2/5 max-w-[420px] max-h-28">
+                    <img loading="lazy" src="./images/gdss-new-logo 1.png" alt="gdss-new-logo" />
+                    <img class="ml-12" loading="lazy" src="./images/indabax 1.png" alt="indabax logo" />
+                </div>
+
+                <div class="footer-links w-2/5 max-w-[1000px]">
+                    <div class="font-extralight flex flex-row justify-between text-base">
+                        <ul>
+                            <li>
+                                <a href="#">Schedule</a>
+                            </li>
+                            <li class="mt-[3.5rem]">
+                                <a href="#">Speakers</a>
+                            </li>
+                            <li class="mt-[3.5rem]">
+                                <a href="#">Travel</a>
+                            </li>
+                            <li class="mt-[3.5rem]">
+                                <a href="#">Souvenirs</a>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <a href="#">Sponsors</a>
+                            </li>
+                            <li class="mt-[3.5rem]">
+                                <a href="#">Mentors</a>
+                            </li>
+                            <li class="mt-[3.5rem]">
+                                <a href="#">Resources</a>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <a href="#">Past Events</a>
+                            </li>
+                            <li class="mt-[3.5rem]">
+                                <a href="#">FAQs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full bg-white h-[3px] mt-32"></div>
+
+            <div class="socials mt-6">
+                <div class="flex flex-row justify-between w-full">
+                    <div class="copyright font-extralight text-base">
+                        <p>Ghana Data Science Summit 2024 | All Rights Reserved</p>
+                    </div>
+
+                    <ul class="flex flex-row justify-between w-[228px]">
+                        <li class="flex justify-center">
+                            <a class="flex justify-center" href="#"><img class="w-full m-auto"
+                                    src="./images/devicon_twitter.png" alt="x_twitter icon" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="w-full" src="./images/mdi_linkedin.png" alt="linkedin icon" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="w-full" src="./images/ri_instagram-line.png"
+                                    alt="instagram icon" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="w-full" src="./images/mingcute_youtube-line.png"
+                                    alt="youtube icon" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="w-full" src="./images/mdi_facebook.png" alt="facebook icon" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./app.js"></script>
+</body>
+
+</html>

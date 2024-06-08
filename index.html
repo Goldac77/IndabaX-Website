@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="overflow-x-hidden">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/4d1dcfb835.js" crossorigin="anonymous"></script>
   <script src="./app.js" defer></script>
-  <title>Document</title>
+  <title>Home</title>
 </head>
 
 <body class="overflow-x-hidden">
@@ -32,13 +32,13 @@
             <a class="text-[#000D30] text-xl" href="./schedule.html">Schedule</a>
           </li>
           <li>
-            <a class="text-[#000D30] text-xl" href="/speakers">Speakers</a>
+            <a class="text-[#000D30] text-xl" href="./speakers.html">Speakers</a>
           </li>
           <li>
-            <a class="text-[#000D30] text-xl" href="/travel-guide">Travel Guide</a>
+            <a class="text-[#000D30] text-xl" href="./travel_guide.html">Travel Guide</a>
           </li>
           <li>
-            <a class="text-[#000D30] text-xl" href="../gallery.html.html">Gallery</a>
+            <a class="text-[#000D30] text-xl" href="./gallery.html">Gallery</a>
           </li>
           <li>
             <a class="text-[#FFFFFF] text-xl bg-[#DE0220] py-[16px] px-[32px] font-normal" href="/register">Register</a>
@@ -65,10 +65,10 @@
         </div>
         <div class="p-8">
           <ul class="text-white text-xl font-extralight flex flex-col gap-6">
-            <li><a href="/">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="./schedule.html">Schedule</a></li>
-            <li><a href="/speaker">Speakers</a></li>
-            <li><a href="/travel-guide">Travel Guide</a></li>
+            <li><a href="./speakers.html">Speakers</a></li>
+            <li><a href="./travel_guide.html">Travel Guide</a></li>
             <li><a href="./gallery.html">Gallery</a></li>
           </ul>
         </div>
@@ -76,97 +76,145 @@
     </div>
   </section>
 
-  <!-- hero -->
-  <section class="my-4 max-w-md mx-auto md:max-w-[900px] mx-10">
-    <h2 class="text-[#000D30] text-4xl font-extrabold leading-none md:text-7xl md:font-black text-center z-[500]">
-      Unleasing the potential of AI through grassroots engagement
-    </h2>
-    <img src="./images/Line-9.png" class="-mt-[20px] inline-block -z-50 mx-auto" alt="signature" />
-    <!-- venue and date -->
-    <div class="flex mx-auto w-full items-center gap-4 justify-around my-8 text-xl flex-col md:flex-row">
-      <div class="flex items-center gap-4">
-        <img src="./images/venue.png" alt="venue icon" />
-        <span>KNUST Campus, Kumasi</span>
-      </div>
-      <div class="flex items-center gap-4">
-        <img src="./images/Date.png" alt="date icon" />
-        <span>17th to 19th July, 2024</span>
-      </div>
-    </div>
-    <!-- conference schedule button -->
-    <div class="w-full flex">
-      <button class="mx-auto inline-block bg-[#DE0220] px-6 py-4 text-lg text-white">
-        <a href="./schedule.html">See Conference Schedule</a>
-      </button>
-    </div>
-    <!-- sponsors -->
-    <div class="my-8 items-center justify-between hidden md:flex">
-      <div>
-        <div class="flex items-center gap-1">
-          <img src="./images/logo.png" alt="logo" class="inline" />
-          <div>
-            <span class="block text-[#DE0220] leading-[1]">Ghana</span>
-            <span class="block text-[#000D30] leading-[1]">Data Science</span>
-            <span class="block text-[#000D30] leading-[1]">Summit 2024</span>
-          </div>
+  <div class="overflow-x-hidden">
+    <!-- hero -->
+    <section class="my-4 max-w-md mx-auto md:max-w-[900px] mx-10">
+      <h2 class="text-[#000D30] text-4xl font-extrabold leading-none md:text-7xl md:font-black text-center z-[500]">
+        Unleasing the potential of AI through grassroots engagement
+      </h2>
+      <img src="./images/Line-9.png" class="-mt-[20px] inline-block -z-50 mx-auto" alt="signature" />
+      <!-- venue and date -->
+      <div class="flex mx-auto w-full items-center gap-4 justify-around my-8 text-xl flex-col md:flex-row">
+        <div class="flex items-center gap-4">
+          <img src="./images/venue.png" alt="venue icon" />
+          <span>KNUST Campus, Kumasi</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="./images/Date.png" alt="date icon" />
+          <span>17th to 19th July, 2024</span>
         </div>
       </div>
-
-      <div><img src="./images/KNUST.png" alt="knust logo" /></div>
-      <div><img src="./images/RAIL.png" alt="RAIL logo" /></div>
-      <div>
-        <img src="./images/transparent_logo_data_science_network-removebg-preview 1.png"
-          alt="data science network logo" />
+      <!-- conference schedule button -->
+      <div class="w-full flex">
+        <button class="mx-auto inline-block bg-[#DE0220] px-6 py-4 text-lg text-white">
+          <a href="./schedule.html">See Conference Schedule</a>
+        </button>
       </div>
-      <div>
-        <img src="./images/deeplearningindaba.png" alt="deeplearningindaba logo" />
-      </div>
-    </div>
-  </section>
-  <!-- what happens at indaba, date and venue -->
-  <section id="home-event" class="bg-[#000D30] w-screen flex flex-col py-48 mt-20">
-    <div class="max-w-[1440px] m-auto block p-8 flex flex-col md:flex-row gap-4 md:justify-between">
-      <div class="flex-1 lg:mr-[100px]">
-        <div class="mb-4">
-          <p id="happens" class="text-white font-sm font-thin">What happens at</p>
+      <!-- sponsors -->
+      <div class="my-8 items-center justify-between hidden md:flex">
+        <div>
           <div class="flex items-center gap-1">
-            <img src="./images/INDABAX.png" alt="./IndabaX text" class="inline-block h-[2rem]" />
-            <p id="ghana-p" class="inline-block text-white font-thin font-sm">Ghana?</p>
+            <img src="./images/logo.png" alt="logo" class="inline" />
+            <div>
+              <span class="block text-[#DE0220] leading-[1]">Ghana</span>
+              <span class="block text-[#000D30] leading-[1]">Data Science</span>
+              <span class="block text-[#000D30] leading-[1]">Summit 2024</span>
+            </div>
           </div>
         </div>
-        <div class="text-white font-extralight max-w-[637px] mt-2">
-          <p class="mb-4">
-            The Ghana Data Science Summit (IndabaX Ghana) is the vibrant summit
-            where Ghana's data science community converges to inspire, innovate,
-            and illuminate the path forward in the realm of Data Science and
-            Machine Intelligence.
-          </p>
-          <p class="mb-4">
-            Celebrating our 5th anniversary this year, we're gearing up for an
-            unforgettable gathering in the heart of Ghana, bringing together a
-            diverse mix of the world's most brilliant minds driving change and
-            shaping the future of technology, analytics, and artificial
-            intelligence.
-          </p>
-          <p class="mb-4">
-            Join us for a dynamic conference experience like no other, where
-            you'll have the chance to network with pioneers, learn from industry
-            leaders, and engage in capacity-building workshops designed to
-            elevate your skills and understanding of Data Mining, Machine
-            Learning, and AI.
-          </p>
+
+        <div><img src="./images/KNUST.png" alt="knust logo" /></div>
+        <div><img src="./images/RAIL.png" alt="RAIL logo" /></div>
+        <div>
+          <img src="./images/transparent_logo_data_science_network-removebg-preview 1.png"
+            alt="data science network logo" />
         </div>
-        <div class="flex gap-4 self-start mt-7">
-          <button class="inline-block bg-[#DE0220] px-3 py-2 md:px-5 md:py-3 text-lg text-white">
-            <a href="./schedule.html" class="min-w-fit">See last year's event</a>
-          </button>
-          <button class="hidden md:inline-block bg-none border px-3 py-2 md:px-5 md:py-3 text-lg text-white">
-            <a href="/share">Share this event</a>
-          </button>
+        <div>
+          <img src="./images/deeplearningindaba.png" alt="deeplearningindaba logo" />
         </div>
       </div>
-      <!-- venue card -->
-      <div class="hidden md:block w-full bg-white border-[#111111] border-4 flex-[0.8] max-w-[437px] max-h-[800px]"
+    </section>
+    <!-- what happens at indaba, date and venue -->
+    <section id="home-event" class="bg-[#000D30] w-screen flex flex-col py-12 md:py-48 mt-20">
+      <div class="max-w-[1440px] m-auto block p-8 flex flex-col md:flex-row gap-4 md:justify-between">
+        <div class="flex-1 lg:mr-[100px]">
+          <div id="happens" class="mb-4">
+            <p class="text-white font-sm font-thin">What happens at</p>
+            <div class="flex items-center gap-1">
+              <span style="font-family: RBNo; font-weight: 450; color: #FFFFFF;">INDABA</span><span
+                style="font-family: RBNo; font-weight: 450; color: #DE0220;">X</span>
+              <p class="text-white font-thin font-sm">Ghana?</p>
+            </div>
+          </div>
+          <div class="text-white font-extralight max-w-[637px] mt-2">
+            <p class="mb-4">
+              The Ghana Data Science Summit (IndabaX Ghana) is the vibrant summit
+              where Ghana's data science community converges to inspire, innovate,
+              and illuminate the path forward in the realm of Data Science and
+              Machine Intelligence.
+            </p>
+            <p class="mb-4">
+              Celebrating our 5th anniversary this year, we're gearing up for an
+              unforgettable gathering in the heart of Ghana, bringing together a
+              diverse mix of the world's most brilliant minds driving change and
+              shaping the future of technology, analytics, and artificial
+              intelligence.
+            </p>
+            <p class="mb-4">
+              Join us for a dynamic conference experience like no other, where
+              you'll have the chance to network with pioneers, learn from industry
+              leaders, and engage in capacity-building workshops designed to
+              elevate your skills and understanding of Data Mining, Machine
+              Learning, and AI.
+            </p>
+          </div>
+          <div class="flex gap-4 self-start mt-7">
+            <button class="inline-block bg-[#DE0220] px-3 py-2 md:px-5 md:py-3 text-lg text-white">
+              <a href="./schedule.html" class="min-w-fit">See last year's event</a>
+            </button>
+            <button class="hidden md:inline-block bg-none border px-3 py-2 md:px-5 md:py-3 text-lg text-white">
+              <a href="/share">Share this event</a>
+            </button>
+          </div>
+        </div>
+        <!-- venue card -->
+        <div class="hidden md:block w-full bg-white border-[#111111] border-4 flex-[0.8] max-w-[437px] max-h-[800px]"
+          style="box-shadow: 12px 12px 0 0 red">
+          <span class="border-b-4 border-[#111111] p-4 text-lg w-full inline-block font-bold text-[#000D30]">
+            Ghana Data Science Summit 2024 Details
+          </span>
+          <div class="px-8 pt-8 pb-8">
+            <!-- stats -->
+            <div class="flex justify-between gap-4 my-6">
+              <!-- duration -->
+              <div class="border-r-2 flex-[0.75] border-[#000D30] flex flex-col items-start justify-center gap-2">
+                <p class="text-3xl font-black text-[#DE0220]">03</p>
+                <p class="font-semibold">Days</p>
+              </div>
+              <!-- speakers -->
+              <div class="border-r-2 flex flex-1 flex-col border-[#000D30] items-center justify-center gap-2">
+                <p class="text-3xl font-black text-[#DE0220]">25</p>
+                <p class="font-semibold">Speakers</p>
+              </div>
+              <!-- sessions -->
+              <div class="flex flex-1 flex-col items-center justify-center gap-2">
+                <p class="text-3xl font-black text-[#DE0220]">32</p>
+                <p class="font-semibold">Sessions</p>
+              </div>
+            </div>
+            <!-- Event Date and add to calender -->
+            <div class="mb-4 mt-14">
+              <span>Event Date</span>
+              <p class="text-3xl font-black text-[#DE0220] my-2">July 17 - 19, 2024</p>
+              <span>Add to Calendar <i class="fa-solid fa-arrow-up rotate-[45deg]"></i> </span>
+            </div>
+
+            <div class="mt-14">
+              <span>Venue</span>
+              <p class="text-2xl font-black text-[#DE0220] leading-7 my-2">
+                Kwame Nkrumah <br> University of Science <br> & Technology
+              </p>
+              <span>Get directions to venue <i class="fa-solid fa-arrow-up rotate-[45deg]"></i> </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- venue card mobile -->
+    <div class="px-5">
+      <div
+        class="my-12 md:hidden w-full bg-white border-[#111111] border-4 flex-[0.8] max-w-[437px] max-h-[810px] m-auto"
         style="box-shadow: 12px 12px 0 0 red">
         <span class="border-b-4 border-[#111111] p-4 text-lg w-full inline-block font-bold text-[#000D30]">
           Ghana Data Science Summit 2024 Details
@@ -207,377 +255,344 @@
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- venue card mobile -->
-  <div class="px-5">
-    <div class="my-12 md:hidden w-full bg-white border-[#111111] border-4 flex-[0.8] max-w-[437px] max-h-[810px] m-auto"
-      style="box-shadow: 12px 12px 0 0 red">
-      <span class="border-b-4 border-[#111111] p-4 text-lg w-full inline-block font-bold text-[#000D30]">
-        Ghana Data Science Summit 2024 Details
-      </span>
-      <div class="px-8 pt-8 pb-8">
-        <!-- stats -->
-        <div class="flex justify-between gap-4 my-6">
-          <!-- duration -->
-          <div class="border-r-2 flex-[0.75] border-[#000D30] flex flex-col items-start justify-center gap-2">
-            <p class="text-3xl font-black text-[#DE0220]">03</p>
-            <p class="font-semibold">Days</p>
-          </div>
-          <!-- speakers -->
-          <div class="border-r-2 flex flex-1 flex-col border-[#000D30] items-center justify-center gap-2">
-            <p class="text-3xl font-black text-[#DE0220]">25</p>
-            <p class="font-semibold">Speakers</p>
-          </div>
-          <!-- sessions -->
-          <div class="flex flex-1 flex-col items-center justify-center gap-2">
-            <p class="text-3xl font-black text-[#DE0220]">32</p>
-            <p class="font-semibold">Sessions</p>
-          </div>
-        </div>
-        <!-- Event Date and add to calender -->
-        <div class="mb-4 mt-14">
-          <span>Event Date</span>
-          <p class="text-3xl font-black text-[#DE0220] my-2">July 17 - 19, 2024</p>
-          <span>Add to Calendar <i class="fa-solid fa-arrow-up rotate-[45deg]"></i> </span>
-        </div>
+    <!-- speakers -->
+    <section class="bg-white w-full h-fit my-16 text-wrap">
+      <div class="mb-2 mx-10">
+        <h3 class="text-4xl md:text-5xl w-[90%] text-[#000D30] font-extrabold">
+          <span class="text-[#DE0220]">25+ Speakers </span> creating meaningful <br>
+          solutions to local problems
+        </h3>
+      </div>
+      <p class="mx-10 max-w-3xl text-wrap w-[90%] text-[#000D30] text-lg">
+        We’re bringing together some of the most brilliant and creative minds
+        working on everything from machine learning to data analytics, AI
+        Research, and more.
+      </p>
 
-        <div class="mt-14">
-          <span>Venue</span>
-          <p class="text-2xl font-black text-[#DE0220] leading-7 my-2">
-            Kwame Nkrumah <br> University of Science <br> & Technology
-          </p>
-          <span>Get directions to venue <i class="fa-solid fa-arrow-up rotate-[45deg]"></i> </span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- speakers -->
-  <section class="bg-white w-full h-fit my-16 text-wrap">
-    <div class="mb-2 mx-10">
-      <h3 class="text-4xl md:text-5xl w-[90%] text-[#000D30] font-extrabold">
-        <span class="text-[#DE0220]">25+ Speakers </span> creating meaningful <br>
-        solutions to local problems
-      </h3>
-    </div>
-    <p class="mx-10 max-w-3xl text-wrap w-[90%] text-[#000D30] text-lg">
-      We’re bringing together some of the most brilliant and creative minds
-      working on everything from machine learning to data analytics, AI
-      Research, and more.
-    </p>
-
-    <!-- speaker cards -->
-    <div id="home-speaker"
-      class="flex gap-4 justify-center max-w-[1172px] mt-8 mb-12 flex-col md:flex-row items-center mx-5 md:mx-10">
-      <!-- speaker 1 -->
-      <div class="flex-1 shrink w-full max-w-[320px]">
-        <img src="./images/Rectangle 24.png" class="w-full" alt="speaker" />
-        <div class="bg-[#000D30] border-b-8 text-white border-[#DE0220] text-center py-4">
-          <!-- name -->
-          <p class="font-bold">Micheal Answer</p>
-          <p class="font-light">AI Researcher,</p>
-          <p class="font-light">Google Deepmind</p>
-        </div>
-      </div>
-      <!-- speaker two -->
-      <div class="flex-1 shrink w-full max-w-[320px]">
-        <img src="./images/Rectangle 24(1).png" class="w-full" alt="speaker" />
-        <div class="bg-[#000D30] border-b-8 text-white border-[#DE0220] text-center py-4">
-          <!-- name -->
-          <p class="font-bold">Aseda Addai-Desehr</p>
-          <p class="font-light">Data Analyst,</p>
-          <p class="font-light">Shopify</p>
-        </div>
-      </div>
-      <!-- speaker three -->
-      <div class="flex-1 shrink w-full max-w-[320px]">
-        <img src="./images/Rectangle 24(2).png" class="w-full" alt="speaker" />
-        <div class="bg-[#000D30] border-b-8 text-white border-[#DE0220] text-center py-4">
-          <!-- name -->
-          <p class="font-bold">Sarah Kennedy</p>
-          <p class="font-light">Cheif of Staff,</p>
-          <p class="ont-light">Zindi Africa</p>
-        </div>
-      </div>
-      <!-- speaker four -->
-      <div class="flex-1 shrink w-full max-w-[320px]">
-        <img src="./images/Rectangle 24(3).png" class="w-full" alt="speaker" />
-        <div class="bg-[#000D30] border-b-8 text-white border-[#DE0220] text-center py-4">
-          <!-- name -->
-          <p class="font-bold">Julius Amegadzi</p>
-          <p class="font-light">Lecturer ,</p>
-          <p class="font-light">Acedemic City University</p>
-        </div>
-      </div>
-    </div>
-    <div class="text-center md:text-left max-w-[300px] m-auto md:m-0 md:max-w-full">
-      <button class="mt-4 inline-block bg-[#DE0220] px-6 py-4 text-lg text-white md:mx-10">
-        <a href="/speakers">View confirmed speakers for IndabaX Ghana 2024</a>
-      </button>
-    </div>
-  </section>
-  <!-- Session Topics -->
-  <section id="home-section" class="my-32 px-5 md:px-0">
-    <div class="bg-[#000D30] w-full text-white font-bold text-center mt-12 mb-8 py-12 md:text-left md:px-10"
-      style="font-size: clamp(32px, 2vw, 48px);">
-      Session Topics
-    </div>
-    <!-- topics -->
-    <div class="flex flex-col md:flex-row flex-wrap md:justify-between mb-6 md:px-10 max-w-[1300px]">
-      <div class="md:w-1/2">
-        <!-- topic 1 -->
-        <div class="flex gap-2 items-center mt-3">
-          <div class="bg-[#DE0220] w-1/4 flex items-center justify-center inline-block min-w-[50px] max-w-[80px]"
-            style="padding: clamp(15px, 1%, 40px);">
-            <img src="./images/Vector(4).svg" alt="love" />
-          </div>
-          <div class="text-xl w-3/4 font-semibold">
-            <p>Data Science for Public Health:</p>
-            <p>Case Studies from the Front Lines</p>
+      <!-- speaker cards -->
+      <div id="home-speaker"
+        class="flex gap-4 justify-center max-w-[1172px] mt-8 mb-12 flex-col md:flex-row items-center mx-5 md:mx-10">
+        <!-- speaker 1 -->
+        <div class="flex-1 shrink w-full max-w-[320px]">
+          <img src="./images/Rectangle 24.png" class="w-full" alt="speaker" />
+          <div class="bg-[#000D30] border-b-8 text-white border-[#DE0220] text-center py-4">
+            <!-- name -->
+            <p class="font-bold">Micheal Answer</p>
+            <p class="font-light">AI Researcher,</p>
+            <p class="font-light">Google Deepmind</p>
           </div>
         </div>
-        <!-- topic 3 -->
-        <div class="flex gap-2 items-center mt-3">
-          <div class="bg-[#000D30] w-1/4 flex items-center justify-center inline-block min-w-[70px] max-w-[80px]"
-            style="padding: clamp(15px, 1%, 40px);">
-            <img src="./images/Vector(5).svg" alt="love" />
+        <!-- speaker two -->
+        <div class="flex-1 shrink w-full max-w-[320px]">
+          <img src="./images/Rectangle 24(1).png" class="w-full" alt="speaker" />
+          <div class="bg-[#000D30] border-b-8 text-white border-[#DE0220] text-center py-4">
+            <!-- name -->
+            <p class="font-bold">Aseda Addai-Desehr</p>
+            <p class="font-light">Data Analyst,</p>
+            <p class="font-light">Shopify</p>
           </div>
-          <div class="text-xl w-3/4 font-semibold">
-            <p>Harnesing AI for sustainable</p>
-            <p>Development in Africa</p>
+        </div>
+        <!-- speaker three -->
+        <div class="flex-1 shrink w-full max-w-[320px]">
+          <img src="./images/Rectangle 24(2).png" class="w-full" alt="speaker" />
+          <div class="bg-[#000D30] border-b-8 text-white border-[#DE0220] text-center py-4">
+            <!-- name -->
+            <p class="font-bold">Sarah Kennedy</p>
+            <p class="font-light">Cheif of Staff,</p>
+            <p class="ont-light">Zindi Africa</p>
+          </div>
+        </div>
+        <!-- speaker four -->
+        <div class="flex-1 shrink w-full max-w-[320px]">
+          <img src="./images/Rectangle 24(3).png" class="w-full" alt="speaker" />
+          <div class="bg-[#000D30] border-b-8 text-white border-[#DE0220] text-center py-4">
+            <!-- name -->
+            <p class="font-bold">Julius Amegadzi</p>
+            <p class="font-light">Lecturer ,</p>
+            <p class="font-light">Acedemic City University</p>
           </div>
         </div>
       </div>
-
-      <div class="md:w-1/2 mt-0">
-        <!-- topic 3 -->
-        <div class="flex gap-2 items-center mt-3">
-          <div class="bg-[#DE0220] w-1/4 flex items-center justify-center inline-block min-w-[50px] max-w-[80px]"
-            style="padding: clamp(15px, 1%, 40px);">
-            <img src="./images/Vector(2).svg" alt="love" />
-          </div>
-          <div class="text-xl w-3/4 font-semibold">
-            <p>The power of Geospacial Data:</p>
-            <p>Mapping the future of Africa</p>
-          </div>
-        </div>
-        <!-- topic four -->
-        <div class="flex gap-2 items-center mt-3">
-          <div class="bg-[#000D30] w-1/4 flex items-center justify-center inline-block min-w-[50px] max-w-[80px]"
-            style="padding: clamp(15px, 1%, 40px);">
-            <img src="./images/carbon_machine-learning-model.svg" alt="love" />
-          </div>
-          <div class="text-xl w-3/4 font-semibold">
-            <p>Machine Learning demystified:</p>
-            <p>From Theory to Practice</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="text-center md:text-left max-w-[300px] m-auto md:m-0 md:max-w-full">
-      <button class="mt-4 inline-block bg-[#DE0220] px-6 py-4 text-base text-white md:mx-10">
-        <a href="./schedule.html">View full programme schedule</a>
-      </button>
-    </div>
-  </section>
-  <!-- sponsors -->
-  <section id="home-sponsor">
-    <div class="bg-[#000D30] md:py-20">
-      <h1 class="hidden md:block text-4xl font-bold text-center text-white">
-        Our 2024 Partner
-      </h1>
-      <div class="flex justify-center">
-        <div
-          class="flex flex-col md:flex-row md:justify-between justify-center gap-16 md:gap-0 max-w-[1294px] md:w-full border my-10 px-20 md:p-5 mx-5">
-          <h1 class="block md:hidden text-white text-2xl font-bold text-center pt-10">
-            Our Partners & Sponsors
-          </h1>
-          <img class="object-scale-down m-auto" src="./images/googlelogo_color_416x140dp 1.png" alt="" style="width: clamp(50px, 50%, 200px); height: auto;"/>
-          <img class="object-scale-down m-auto" src="./images/pngegg (1) 1.png" alt="" style="width: clamp(50px, 50%, 200px); height: auto;"/>
-          <img class="object-scale-down m-auto" src="./images/AYA DATA full white 1.png" alt="" style="width: clamp(50px, 50%, 200px); height: auto;"/>
-          <img class="object-scale-down m-auto" src="./images/Maverick Full Hollow 1.png" alt="" style="width: clamp(50px, 50%, 200px); height: auto;"/>
-          <img class="object-scale-down m-auto mb-10" src="./images/TTV logo new 1.png" alt="" style="width: clamp(50px, 50%, 200px); height: auto;"/>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- why sponsor -->
-  <section id="why-sponsor" class="hidden lg:block mx-10 my-20">
-    <div class="flex justify-between items-center p-10 m-auto max-w-[1300px]">
-      <div class="w-9/12 lg:w-10/12">
-        <h1 class="text-[#000D30] text-4xl font-bold">
-          Why Sponsor <br />IndabaX Ghana?
-        </h1>
-        <button class="bg-[#DE0220] text-white px-5 py-2 my-5">
-          Become a Sponsor
+      <div class="text-center md:text-left max-w-[300px] m-auto md:m-0 md:max-w-full">
+        <button class="mt-4 inline-block bg-[#DE0220] px-6 py-4 text-lg text-white md:mx-10">
+          <a href="/speakers">View confirmed speakers for IndabaX Ghana 2024</a>
         </button>
       </div>
-      <div style="box-shadow: 15px 15px black" class="flex text-center justify-end border-black max-w-[760px]">
-        <div class="border border-black w-[25%] p-4">
-          <h2 class="font-bold">Network</h2>
-          <p class="pt-2">
-            Meet the biggest players in the data science and artificial
-            intelligence community
-          </p>
+    </section>
+    <!-- Session Topics -->
+    <section id="home-section" class="my-32 px-5 md:px-0">
+      <div class="bg-[#000D30] w-full text-white font-bold text-center mt-12 mb-8 py-12 md:text-left md:px-10"
+        style="font-size: clamp(32px, 2vw, 48px);">
+        Session Topics
+      </div>
+      <!-- topics -->
+      <div class="flex flex-col md:flex-row flex-wrap md:justify-between mb-6 md:px-10 max-w-[1300px]">
+        <div class="md:w-1/2">
+          <!-- topic 1 -->
+          <div class="flex gap-2 items-center mt-3">
+            <div class="bg-[#DE0220] w-1/4 flex items-center justify-center inline-block min-w-[50px] max-w-[80px]"
+              style="padding: clamp(15px, 1%, 40px);">
+              <img src="./images/Vector(4).svg" alt="love" />
+            </div>
+            <div class="text-xl leading-5 md:leading-7 w-3/4 font-semibold">
+              <p>Data Science for Public Health:</p>
+              <p>Case Studies from the Front Lines</p>
+            </div>
+          </div>
+          <!-- topic 3 -->
+          <div class="flex gap-2 items-center mt-3">
+            <div class="bg-[#000D30] w-1/4 flex items-center justify-center inline-block min-w-[70px] max-w-[80px]"
+              style="padding: clamp(15px, 1%, 40px);">
+              <img src="./images/Vector(5).svg" alt="love" />
+            </div>
+            <div class="text-xl leading-5 md:leading-7 w-3/4 font-semibold">
+              <p>Harnesing AI for sustainable</p>
+              <p>Development in Africa</p>
+            </div>
+          </div>
         </div>
-        <div class="border border-black w-[25%] p-4 bg-[#DE0220] text-white">
-          <h2 class="font-bold">Connect</h2>
-          <p class="pt-2">
-            Meet future clients and partners for your business
-          </p>
-        </div>
-        <div class="border border-black w-[25%] p-4 bg-[#000D30] text-white">
-          <h2 class="font-bold">Innovation</h2>
-          <p class="pt-2">
-            Find opportunities to collaborate and create new solutions
-          </p>
-        </div>
-        <div class="border border-black w-[25%] p-4">
-          <h2 class="font-bold">Exposure</h2>
-          <p class="pt-2">
-            Get your brands in front of the people that matter in the data
-            science community
-          </p>
+
+        <div class="md:w-1/2 mt-0">
+          <!-- topic 3 -->
+          <div class="flex gap-2 items-center mt-3">
+            <div class="bg-[#DE0220] w-1/4 flex items-center justify-center inline-block min-w-[50px] max-w-[80px]"
+              style="padding: clamp(15px, 1%, 40px);">
+              <img src="./images/Vector(2).svg" alt="love" />
+            </div>
+            <div class="text-xl leading-5 md:leading-7 w-3/4 font-semibold">
+              <p>The power of Geospacial Data:</p>
+              <p>Mapping the future of Africa</p>
+            </div>
+          </div>
+          <!-- topic four -->
+          <div class="flex gap-2 items-center mt-3">
+            <div class="bg-[#000D30] w-1/4 flex items-center justify-center inline-block min-w-[50px] max-w-[80px]"
+              style="padding: clamp(15px, 1%, 40px);">
+              <img src="./images/carbon_machine-learning-model.svg" alt="love" />
+            </div>
+            <div class="text-xl leading-5 md:leading-7 w-3/4 font-semibold">
+              <p>Machine Learning demystified:</p>
+              <p>From Theory to Practice</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!--  -->
-  <section class="relative hidden md:block m-auto px-16 max-w-[1294px]">
-    <div class="mt-20">
-      <div>
-        <img src="./images/Rectangle 37.png" alt="" />
+      <div class="text-center md:text-left max-w-[300px] m-auto md:m-0 md:max-w-full">
+        <button class="mt-4 inline-block bg-[#DE0220] px-6 py-4 text-base text-white md:mx-10">
+          <a href="./schedule.html">View full programme schedule</a>
+        </button>
       </div>
-      <div class="absolute top-5 left-10 text-white my-0 xl:my-14 px-16">
-        <h2 class="lg:text-4xl pt-0 lg:pt-0 text-lg font-semibold">
-          Join the Ghana Data Science <br class="hidden lg:block" />Summit
-          Mentorship Program
+    </section>
+    <!-- sponsors -->
+    <section id="home-sponsor">
+      <div class="bg-[#000D30] md:py-20">
+        <h1 class="hidden md:block text-4xl font-bold text-center text-white">
+          Our 2024 Partner
+        </h1>
+        <div class="flex justify-center">
+          <div
+            class="flex flex-col md:flex-row md:justify-between justify-center gap-16 md:gap-0 max-w-[1294px] md:w-full border my-10 px-20 md:p-5 mx-5">
+            <h1 class="block md:hidden text-white text-2xl font-bold text-center pt-10">
+              Our Partners & Sponsors
+            </h1>
+            <img class="object-scale-down m-auto" src="./images/googlelogo_color_416x140dp 1.png" alt=""
+              style="width: clamp(50px, 50%, 200px); height: auto;" />
+            <img class="object-scale-down m-auto" src="./images/pngegg (1) 1.png" alt=""
+              style="width: clamp(50px, 50%, 200px); height: auto;" />
+            <img class="object-scale-down m-auto" src="./images/AYA DATA full white 1.png" alt=""
+              style="width: clamp(50px, 50%, 200px); height: auto;" />
+            <img class="object-scale-down m-auto" src="./images/Maverick Full Hollow 1.png" alt=""
+              style="width: clamp(50px, 50%, 200px); height: auto;" />
+            <img class="object-scale-down m-auto mb-10 md:mb-auto" src="./images/TTV logo new 1.png" alt=""
+              style="width: clamp(50px, 50%, 200px); height: auto;" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- why sponsor -->
+    <section id="why-sponsor" class="hidden lg:block mx-10 my-20">
+      <div class="flex justify-between items-center p-10 m-auto max-w-[1300px]">
+        <div class="w-9/12 lg:w-10/12">
+          <h1 class="text-[#000D30] text-4xl font-bold">
+            Why Sponsor <br />IndabaX Ghana?
+          </h1>
+          <button class="bg-[#DE0220] text-white px-5 py-2 my-5">
+            Become a Sponsor
+          </button>
+        </div>
+        <div style="box-shadow: 15px 15px black" class="flex text-center justify-end border-black max-w-[760px]">
+          <div class="border border-black w-[25%] p-4">
+            <h2 class="font-bold">Network</h2>
+            <p class="pt-2">
+              Meet the biggest players in the data science and artificial
+              intelligence community
+            </p>
+          </div>
+          <div class="border border-black w-[25%] p-4 bg-[#DE0220] text-white">
+            <h2 class="font-bold">Connect</h2>
+            <p class="pt-2">
+              Meet future clients and partners for your business
+            </p>
+          </div>
+          <div class="border border-black w-[25%] p-4 bg-[#000D30] text-white">
+            <h2 class="font-bold">Innovation</h2>
+            <p class="pt-2">
+              Find opportunities to collaborate and create new solutions
+            </p>
+          </div>
+          <div class="border border-black w-[25%] p-4">
+            <h2 class="font-bold">Exposure</h2>
+            <p class="pt-2">
+              Get your brands in front of the people that matter in the data
+              science community
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section class="relative hidden md:block m-auto px-16 max-w-[1294px]">
+      <div class="mt-20">
+        <div>
+          <img src="./images/Rectangle 37.png" alt="" />
+        </div>
+        <div class="absolute top-5 left-10 text-white my-0 xl:my-14 px-16">
+          <h2 class="lg:text-4xl pt-0 lg:pt-0 text-lg font-semibold">
+            Join the Ghana Data Science <br class="hidden lg:block" />Summit
+            Mentorship Program
+          </h2>
+          <p class="pr-[30%] xl:pr-[40%] text-base pt-2 lg:text-lg lg:pt-2 lg:pt-5">
+            This initiative seeks to bridge the gap between aspiring data science,
+            AI, ML professionals and industry experts through personalized
+            guidance, hands-on projects, and career development opportunities.
+          </p>
+          <button class="bg-[#DE0220] text-white px-5 py-1 mb-5 lg:py-3 my-5">
+            Learn more
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="block md:hidden my-14 mx-10">
+      <div class="flex flex-col justify-center">
+        <img class="w-full object-cover" src="./images/Rectangle 37 (1).png" alt="" />
+        <!-- <h2 text-[#000D30] text-2xl font-bold text-red-400>
+          Join the Ghana Data Science Summit Mentorship Program 1
+        </h2> -->
+        <h2 class="text-3xl leading-10 text-[#000D30] font-semibold pt-5">
+          Join the Ghana Data <br />Science Summit <br />Mentorship Program
         </h2>
-        <p class="pr-[30%] xl:pr-[40%] text-base pt-2 lg:text-lg lg:pt-2 lg:pt-5">
+        <p class="pr-10 mt-4">
           This initiative seeks to bridge the gap between aspiring data science,
           AI, ML professionals and industry experts through personalized
           guidance, hands-on projects, and career development opportunities.
         </p>
-        <button class="bg-[#DE0220] text-white px-5 py-1 mb-5 lg:py-3 my-5">
+        <button class="w-fit bg-[#DE0220] text-white px-3 py-2 my-5">
           Learn more
         </button>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="block md:hidden my-14 mx-10">
-    <div class="flex flex-col justify-center">
-      <img class="w-full object-cover" src="./images/Rectangle 37 (1).png" alt="" />
-      <!-- <h2 text-[#000D30] text-2xl font-bold text-red-400>
-          Join the Ghana Data Science Summit Mentorship Program 1
-        </h2> -->
-      <h2 class="text-3xl text-[#000D30] font-semibold pt-5">
-        Join the Ghana Data <br />Science Summit <br />Mentorship Program
-      </h2>
-      <p class="pr-10 mt-4">
-        This initiative seeks to bridge the gap between aspiring data science,
-        AI, ML professionals and industry experts through personalized
-        guidance, hands-on projects, and career development opportunities.
-      </p>
-      <button class="w-fit bg-[#DE0220] text-white px-3 py-2 my-5">
-        Learn more
-      </button>
-    </div>
-  </section>
+    <!-- faq -->
+    <section id="faq" class="my-20 mx-10">
+      <div class="flex flex-col justify-start md:justify-center items-center">
+        <div class="mb-5 w-fit">
+          <h1 class="text-[#161C2D] text-4xl font-semibold text-center">
+            Frequently Asked Questions
+          </h1>
+          <p class="text-[#000D30] text-left md:text-center pt-5 pb-10">
+            Here are some answers to some questions you <br />
+            probably have on your mind.
+          </p>
 
-  <!-- faq -->
-  <section id="faq" class="my-20 mx-10">
-    <div class="flex flex-col justify-start md:justify-center items-center">
-      <div class="mb-5 w-fit">
-        <h1 class="text-[#161C2D] text-4xl font-semibold text-center">
-          Frequently Asked Questions
-        </h1>
-        <p class="text-[#000D30] text-left md:text-center pt-5 pb-10">
-          Here are some answers to some questions you <br />
-          probably have on your mind.
-        </p>
-
-        <!--Accordions-->
-        <div class="relative mb-3 max-w-[856px] border border-[#000D30]">
-          <h6 class="mb-0">
-            <button
-              class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in cursor-pointer border-slate-100 text-slate-700 group text-[#161C2D]"
-              data-collapse-target="animated-collapse-1">
-              <span class="font-bold w-[90%]">Is the conference totally free?</span>
-              <i
-                class="absolute right-0 px-5 text-base transition-transform fa fa-chevron-right group-open:rotate-[90deg]"></i>
-            </button>
-          </h6>
-          <div data-collapse="animated-collapse-1" class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
-            <div class="p-4 text-base leading-normal">
-              Yes. The conference is free. It covers conference fee, snacks and lunch, souvenirs and short
-              transportation on campus
+          <!--Accordions-->
+          <div class="relative mb-3 max-w-[856px] border border-[#000D30]">
+            <h6 class="mb-0">
+              <button
+                class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in cursor-pointer border-slate-100 text-slate-700 group text-[#161C2D]"
+                data-collapse-target="animated-collapse-1">
+                <span class="font-bold w-[90%]">Is the conference totally free?</span>
+                <i
+                  class="absolute right-0 px-5 text-base transition-transform fa fa-chevron-right group-open:rotate-[90deg]"></i>
+              </button>
+            </h6>
+            <div data-collapse="animated-collapse-1"
+              class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              <div class="p-4 text-base leading-normal">
+                Yes. The conference is free. It covers conference fee, snacks and lunch, souvenirs and short
+                transportation on campus
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="relative mb-3 max-w-[856px] border border-[#000D30] md:mt-5">
-          <h6 class="mb-0">
-            <button
-              class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in cursor-pointer border-slate-100 text-slate-700 group text-[#161C2D]"
-              data-collapse-target="animated-collapse-2">
-              <span class="font-bold w-[90%]">Is the conference totally free?</span>
-              <i
-                class="absolute right-0 px-5 text-base transition-transform fa fa-chevron-right group-open:rotate-[90deg]"></i>
-            </button>
-          </h6>
-          <div data-collapse="animated-collapse-2" class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
-            <div class="p-4 text-base leading-normal">
-              Yes. The conference is free. It covers conference fee, snacks and lunch, souvenirs and short
-              transportation on campus
+          <div class="relative mb-3 max-w-[856px] border border-[#000D30] md:mt-5">
+            <h6 class="mb-0">
+              <button
+                class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in cursor-pointer border-slate-100 text-slate-700 group text-[#161C2D]"
+                data-collapse-target="animated-collapse-2">
+                <span class="font-bold w-[90%]">Is the conference totally free?</span>
+                <i
+                  class="absolute right-0 px-5 text-base transition-transform fa fa-chevron-right group-open:rotate-[90deg]"></i>
+              </button>
+            </h6>
+            <div data-collapse="animated-collapse-2"
+              class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              <div class="p-4 text-base leading-normal">
+                Yes. The conference is free. It covers conference fee, snacks and lunch, souvenirs and short
+                transportation on campus
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="relative mb-3 max-w-[856px] border border-[#000D30] md:mt-5">
-          <h6 class="mb-0">
-            <button
-              class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in cursor-pointer border-slate-100 text-slate-700 group text-[#161C2D]"
-              data-collapse-target="animated-collapse-3">
-              <span class="font-bold w-[90%]">Is the conference totally free?</span>
-              <i
-                class="absolute right-0 px-5 text-base transition-transform fa fa-chevron-right group-open:rotate-[90deg]"></i>
-            </button>
-          </h6>
-          <div data-collapse="animated-collapse-3" class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
-            <div class="p-4 text-base leading-normal">
-              Yes. The conference is free. It covers conference fee, snacks and lunch, souvenirs and short
-              transportation on campus
+          <div class="relative mb-3 max-w-[856px] border border-[#000D30] md:mt-5">
+            <h6 class="mb-0">
+              <button
+                class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in cursor-pointer border-slate-100 text-slate-700 group text-[#161C2D]"
+                data-collapse-target="animated-collapse-3">
+                <span class="font-bold w-[90%]">Is the conference totally free?</span>
+                <i
+                  class="absolute right-0 px-5 text-base transition-transform fa fa-chevron-right group-open:rotate-[90deg]"></i>
+              </button>
+            </h6>
+            <div data-collapse="animated-collapse-3"
+              class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              <div class="p-4 text-base leading-normal">
+                Yes. The conference is free. It covers conference fee, snacks and lunch, souvenirs and short
+                transportation on campus
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="relative mb-3 max-w-[856px] border border-[#000D30] md:mt-5">
-          <h6 class="mb-0">
-            <button
-              class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in cursor-pointer border-slate-100 text-slate-700 group text-[#161C2D]"
-              data-collapse-target="animated-collapse-4">
-              <span class="font-bold w-[90%]">Is the conference totally free?</span>
-              <i
-                class="absolute right-0 px-5 text-base transition-transform fa fa-chevron-right group-open:rotate-[90deg]"></i>
-            </button>
-          </h6>
-          <div data-collapse="animated-collapse-4" class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
-            <div class="p-4 text-base leading-normal">
-              Yes. The conference is free. It covers conference fee, snacks and lunch, souvenirs and short
-              transportation on campus
+          <div class="relative mb-3 max-w-[856px] border border-[#000D30] md:mt-5">
+            <h6 class="mb-0">
+              <button
+                class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in cursor-pointer border-slate-100 text-slate-700 group text-[#161C2D]"
+                data-collapse-target="animated-collapse-4">
+                <span class="font-bold w-[90%]">Is the conference totally free?</span>
+                <i
+                  class="absolute right-0 px-5 text-base transition-transform fa fa-chevron-right group-open:rotate-[90deg]"></i>
+              </button>
+            </h6>
+            <div data-collapse="animated-collapse-4"
+              class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+              <div class="p-4 text-base leading-normal">
+                Yes. The conference is free. It covers conference fee, snacks and lunch, souvenirs and short
+                transportation on campus
+              </div>
             </div>
           </div>
-        </div>
 
-        <p class="mt-10 text-center">
-          Haven't got your answer? <br class="block md:hidden" />
-          <span class="font-bold text-[#DE0220] cursor-pointer">Contact our support now</span>
-        </p>
+          <p class="mt-10 text-center">
+            Haven't got your answer? <br class="block md:hidden" />
+            <span class="font-bold text-[#DE0220] cursor-pointer">Contact our support now</span>
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
+
+
 
   <!--Footer-->
   <section class="footer bg-[#000D30] py-16 md:py-28 px-5 md:px-20 text-white">

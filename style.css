@@ -23,13 +23,18 @@
   @font-face {
     font-family: RBNo;
     src: url("./font/RBNo3.1-Bold.otf");
-    src: url("./font/RBNo3.1-Thin.otf");
   }
 
   @font-face {
     font-family: RBNo;
     src: url("./font/RBNo3.1-Thin.otf");
     font-weight: 100;
+  }
+
+  @font-face {
+    font-family: RBNo;
+    src: url("./font/RBNo3.1-Extrabold.otf");
+    font-weight: 450;
   }
 
   #tab1,
@@ -69,12 +74,7 @@
     font-family: Inter;
   }
 
-  #ghana-p {
-    font-family: RBNo;
-    font-size: clamp(33px, 4vw, 46px) !important;
-  }
-
-  #happens {
+  #happens p, #happens span{
     font-size: clamp(33px, 4vw, 46px) !important;
   }
 
@@ -93,5 +93,20 @@
 
   #why-sponsor p {
     font-size: clamp(6px, 1rem, 16px);
+  }
+
+  /*Travel guide*/
+  #travel-header p{
+    font-size: clamp(24px, 3rem, 48px);
+    font-weight: 700;
+  }
+
+  #travel-header span {
+    font-size: clamp(12px, 1rem, 24px);
+  }
+
+  #travel-p-head {
+    font-size: clamp(16px, 3rem, 32px);
+    font-weight: 700;
   }
 }
