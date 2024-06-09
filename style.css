@@ -104,6 +104,12 @@
     font-size: clamp(12px, 1rem, 24px);
   }
 
+  @media screen and (min-width: 1090px) {
+    #home-section p {
+      font-size: 24px;
+    }
+  }
+
   #why-sponsor p {
     font-size: clamp(6px, 1rem, 16px);
   }
@@ -111,6 +117,7 @@
   #topic_1_div:hover {
     background-color: #DE0220;
     color: #FFFFFF;
+    width: 95%;
   }
 
   #topic_1_div:hover #topic_1_img_div {
@@ -120,6 +127,7 @@
   #topic_2_div:hover {
     background-color: #000D30;
     color: #FFFFFF;
+    width: 95%;
   }
 
   #topic_2_div:hover #topic_2_img_div {
@@ -129,6 +137,7 @@
   #topic_3_div:hover {
     background-color: #DE0220;
     color: #FFFFFF;
+    width: 95%;
   }
 
   #topic_3_div:hover #topic_3_img_div {
@@ -138,6 +147,7 @@
   #topic_4_div:hover {
     background-color: #000D30;
     color: #FFFFFF;
+    width: 95%;
   }
 
   #topic_4_div:hover #topic_4_img_div {
