@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/4d1dcfb835.js" crossorigin="anonymous"></script>
+    <title>Mentorship</title>
+</head>
+
+<body>
+    <!-- header -->
+    <section class="px-10 sticky top-0 bg-white z-[999]">
+        <header class="flex w-full items-center justify-between my-8 max-w-[1300px] m-auto">
+            <!-- logo -->
+            <div class="flex items-center gap-1">
+                <img src="./images/logo.png" alt="logo" class="inline" />
+                <div>
+                    <span class="block text-[#DE0220] leading-[1]">Ghana</span>
+                    <span class="block text-[#000D30] leading-[1]">Data Science</span>
+                    <span class="block text-[#000D30] leading-[1]">Summit 2024</span>
+                </div>
+            </div>
+            <!-- biggger screen nav-->
+            <nav class="flex flex-row justify-between hidden md:inline-block w-full max-w-[1000px]">
+                <ul class="flex items-center w-full justify-around">
+                    <li>
+                        <a class="text-[#000D30] text-xl" href="./schedule.html">Schedule</a>
+                    </li>
+                    <li>
+                        <a class="text-[#000D30] text-xl" href="./speakers.html">Speakers</a>
+                    </li>
+                    <li>
+                        <a class="text-[#000D30] text-xl" href="./travel_guide.html">Travel Guide</a>
+                    </li>
+                    <li>
+                        <a class="text-[#000D30] text-xl" href="./gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a class="text-[#FFFFFF] text-xl bg-[#DE0220] px-5 py-3 font-normal hover:bg-[#000D30]"
+                            href="/register">Register</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- mobile screen nav humb -->
+            <div id="openModalBtn"
+                class="bg-[#000D30] rounded flex flex-col gap-1 p-2 cursor-pointer absolute right-8 md:hidden w-[40px]">
+                <div class="h-0.5 my-[2px] w-full px-2 bg-white rounded-sm"></div>
+                <div class="h-0.5 my-[2px] w-full px-2 bg-white rounded-sm"></div>
+                <div class="h-0.5 my-[2px] w-full px-2 bg-white rounded-sm"></div>
+            </div>
+        </header>
+        <!-- modal mobile screen -->
+        <div id="modal" class="fixed inset-0 hidden items-center justify-end transition-opacity duration-300 z-[999]">
+            <div id="modalContent"
+                class="bg-[#000D30] w-[250px] h-full mt-20 transform translate-x-full transition-transform duration-300">
+                <div class="flex justify-end p-4">
+                    <!-- <h2 class="text-xl font-semibold">Modal Title</h2> -->
+                    <button id="closeModalBtn" class="text-white text-xl flex-end">
+                        <i class="fa-solid fa-xmark fa-2xl"></i>
+                    </button>
+                </div>
+                <div>
+                    <ul class="text-white text-xl font-extralight flex flex-col gap-5">
+                        <li class="p-4 hover:bg-white hover:text-[#000D30]"><a href="./index.html">Home</a></li>
+                        <li class="p-4 hover:bg-white hover:text-[#000D30]"><a href="./schedule.html">Schedule</a></li>
+                        <li class="p-4 hover:bg-white hover:text-[#000D30]"><a href="./speakers.html">Speakers</a></li>
+                        <li class="p-4 hover:bg-white hover:text-[#000D30]"><a href="./travel_guide.html">Travel
+                                Guide</a></li>
+                        <li class="p-4 hover:bg-white hover:text-[#000D30]"><a href="./gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="mentorship-header" class="mt-20 text-center mx-5">
+        <p class="text-[#000D30]">The Ghana Data Science Summit <br> <span class="text-[#DE0220]">Mentorship
+                Program</span></p>
+    </div>
+
+    <div class="max-w-[827px] text-center m-auto mb-10 mt-5">
+        <p class="mx-5 text-[20px]">This initiative is designed to bridge the gap between aspiring data science, AI, ML
+            professionals and industry experts through personalized guidance, hands-on projects, and career development
+            opportunities.</p>
+    </div>
+
+    <main class="m-auto max-w-[1294px]">
+        <p id="mentorship-p-head" class="my-10 px-5 text-[#000D30]">
+            Benefits of the Program
+        </p>
+        <div class="flex flex-col md:flex-row justify-around gap-8 px-5 my-5">
+            <img class="w-full" src="./images/mentorship_1.png" alt="mentorship_1" />
+            <img class="w-full" src="./images/mentorship_2.png" alt="mentorship_2" />
+        </div>
+
+        <div id="mentorship-benefits" class="text-left px-5 mb-20">
+            <ul class="list-disc mx-5 leading-[60px]">
+                <li>
+                    Direct mentorship from industry leaders
+                </li>
+                <li>
+                    Networking opportunities with peers and professionals
+                </li>
+                <li>
+                    Hands-on projects to apply your learning in real-world scenarios
+                </li>
+                <li>
+                    Enhance your resume with practical experience and projects
+                </li>
+                <li>
+                    Access to exclusive workshops and webinars
+                </li>
+            </ul>
+
+            <div id="mentorship-btn-div" class="flex flex-col md:flex-row gap-5 mt-5">
+                <div>
+                    <a class="block bg-[#DE0220] px-4 py-4 text-white w-[220px] m-auto md:m-0 text-center hover:bg-[#000D30]"
+                        href="#">Register as a mentee</a>
+                </div>
+                <div>
+                    <a class="block px-4 py-4 text-[#000D30] border-2 border-[#000D30] w-[220px] m-auto md:m-0 text-center hover:bg-[#000D30] hover:text-white"
+                        href="#">Volunteer as a mentor</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mentorship-questions" class="mx-5">
+            <p class="md:hidden">Let’s answer a few questions you may have</p>
+            <p class="hidden md:block">Let’s answer a few <br> questions you may have</p>
+
+            <div class="mt-10">
+                <div class="relative mb-5 max-w-[856px] border border-[#000D30]">
+                    <h6 class="mb-0">
+                        <button
+                            class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in cursor-pointer border-slate-100 text-slate-700 group text-[#161C2D]"
+                            data-collapse-target="animated-collapse-1">
+                            <span class="font-bold w-[90%]">Is there an age requirement?</span>
+                            <i
+                                class="absolute right-0 px-5 text-base transition-transform fa fa-chevron-right group-open:rotate-[90deg]"></i>
+                        </button>
+                    </h6>
+                    <div data-collapse="animated-collapse-1"
+                        class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-4 text-base leading-normal">
+                            Yes. The conference is free. It covers conference fee, snacks and lunch, souvenirs and short
+                            transportation on campus
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative mb-5 max-w-[856px] border border-[#000D30]">
+                    <h6 class="mb-0">
+                        <button
+                            class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in cursor-pointer border-slate-100 text-slate-700 group text-[#161C2D]"
+                            data-collapse-target="animated-collapse-2">
+                            <span class="font-bold w-[90%]">How long is the program?</span>
+                            <i
+                                class="absolute right-0 px-5 text-base transition-transform fa fa-chevron-right group-open:rotate-[90deg]"></i>
+                        </button>
+                    </h6>
+                    <div data-collapse="animated-collapse-2"
+                        class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-4 text-base leading-normal">
+                            Yes. The conference is free. It covers conference fee, snacks and lunch, souvenirs and short
+                            transportation on campus
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative mb-5 max-w-[856px] border border-[#000D30]">
+                    <h6 class="mb-0">
+                        <button
+                            class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in cursor-pointer border-slate-100 text-slate-700 group text-[#161C2D]"
+                            data-collapse-target="animated-collapse-3">
+                            <span class="font-bold w-[90%]">Do I get a job after the program?</span>
+                            <i
+                                class="absolute right-0 px-5 text-base transition-transform fa fa-chevron-right group-open:rotate-[90deg]"></i>
+                        </button>
+                    </h6>
+                    <div data-collapse="animated-collapse-3"
+                        class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-4 text-base leading-normal">
+                            Yes. The conference is free. It covers conference fee, snacks and lunch, souvenirs and short
+                            transportation on campus
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative mb-5 max-w-[856px] border border-[#000D30]">
+                    <h6 class="mb-0">
+                        <button
+                            class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in cursor-pointer border-slate-100 text-slate-700 group text-[#161C2D]"
+                            data-collapse-target="animated-collapse-4">
+                            <span class="font-bold w-[90%]">Is it only for people in data science or machine
+                                learning?</span>
+                            <i
+                                class="absolute right-0 px-5 text-base transition-transform fa fa-chevron-right group-open:rotate-[90deg]"></i>
+                        </button>
+                    </h6>
+                    <div data-collapse="animated-collapse-4"
+                        class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-4 text-base leading-normal">
+                            Yes. The conference is free. It covers conference fee, snacks and lunch, souvenirs and short
+                            transportation on campus
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative mb-5 max-w-[856px] border border-[#000D30]">
+                    <h6 class="mb-0">
+                        <button
+                            class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in cursor-pointer border-slate-100 text-slate-700 group text-[#161C2D]"
+                            data-collapse-target="animated-collapse-5">
+                            <span class="font-bold w-[90%]">Is it free?</span>
+                            <i
+                                class="absolute right-0 px-5 text-base transition-transform fa fa-chevron-right group-open:rotate-[90deg]"></i>
+                        </button>
+                    </h6>
+                    <div data-collapse="animated-collapse-5"
+                        class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-4 text-base leading-normal">
+                            Yes. The conference is free. It covers conference fee, snacks and lunch, souvenirs and short
+                            transportation on campus
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative mb-5 max-w-[856px] border border-[#000D30]">
+                    <h6 class="mb-0">
+                        <button
+                            class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in cursor-pointer border-slate-100 text-slate-700 group text-[#161C2D]"
+                            data-collapse-target="animated-collapse-6">
+                            <span class="font-bold w-[90%]">What are the expectations?</span>
+                            <i
+                                class="absolute right-0 px-5 text-base transition-transform fa fa-chevron-right group-open:rotate-[90deg]"></i>
+                        </button>
+                    </h6>
+                    <div data-collapse="animated-collapse-6"
+                        class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-4 text-base leading-normal">
+                            Yes. The conference is free. It covers conference fee, snacks and lunch, souvenirs and short
+                            transportation on campus
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative mb-5 max-w-[856px] border border-[#000D30]">
+                    <h6 class="mb-0">
+                        <button
+                            class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in cursor-pointer border-slate-100 text-slate-700 group text-[#161C2D]"
+                            data-collapse-target="animated-collapse-7">
+                            <span class="font-bold w-[90%]">Can I select my own mentor?</span>
+                            <i
+                                class="absolute right-0 px-5 text-base transition-transform fa fa-chevron-right group-open:rotate-[90deg]"></i>
+                        </button>
+                    </h6>
+                    <div data-collapse="animated-collapse-7"
+                        class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-4 text-base leading-normal">
+                            Yes. The conference is free. It covers conference fee, snacks and lunch, souvenirs and short
+                            transportation on campus
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative mb-5 max-w-[856px] border border-[#000D30]">
+                    <h6 class="mb-0">
+                        <button
+                            class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in cursor-pointer border-slate-100 text-slate-700 group text-[#161C2D]"
+                            data-collapse-target="animated-collapse-8">
+                            <span class="font-bold w-[90%]">Is the mentorship program personalized to my needs?</span>
+                            <i
+                                class="absolute right-0 px-5 text-base transition-transform fa fa-chevron-right group-open:rotate-[90deg]"></i>
+                        </button>
+                    </h6>
+                    <div data-collapse="animated-collapse-8"
+                        class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-4 text-base leading-normal">
+                            Yes. The conference is free. It covers conference fee, snacks and lunch, souvenirs and short
+                            transportation on campus
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative mb-5 max-w-[856px] border border-[#000D30]">
+                    <h6 class="mb-0">
+                        <button
+                            class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in cursor-pointer border-slate-100 text-slate-700 group text-[#161C2D]"
+                            data-collapse-target="animated-collapse-9">
+                            <span class="font-bold w-[90%]">What tools or equipment are needed?</span>
+                            <i
+                                class="absolute right-0 px-5 text-base transition-transform fa fa-chevron-right group-open:rotate-[90deg]"></i>
+                        </button>
+                    </h6>
+                    <div data-collapse="animated-collapse-9"
+                        class="h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-4 text-base leading-normal">
+                            Yes. The conference is free. It covers conference fee, snacks and lunch, souvenirs and short
+                            transportation on campus
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mx-5 my-8">
+            <p>Got any enquiries? Send us an email at <a class="text-[#DE0220] font-semibold"
+                    href="#">mentorship@indabaxghana.com</a></p>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <section class="footer bg-[#000D30] py-16 md:py-28 px-5 md:px-10 text-white">
+        <!--Mobile footer-->
+        <div class="md:hidden">
+            <div class="flex flex-row w-[110px]">
+                <img loading="lazy" src="./images/gdss-new-logo 1.png" alt="gdss-new-logo">
+                <img class="ml-12" loading="lazy" src="./images/indabax 1.png" alt="indabax logo">
+            </div>
+
+            <div class="footer-links mt-16 max-w-[230px]">
+                <p class="font-bold text-xl">Useful Links</p>
+                <div class="font-extralight flex flex-row justify-between mt-9 text-base">
+                    <ul>
+                        <li>
+                            <a href="./schedule.html">Schedule</a>
+                        </li>
+                        <li>
+                            <a href="./speakers.html">Speakers</a>
+                        </li>
+                        <li>
+                            <a href="./travel_guide.html">Travel</a>
+                        </li>
+                        <li>
+                            <a href="./gallery.html">Gallery</a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <a href="#">Sponsors</a>
+                        </li>
+                        <li>
+                            <a href="./mentorship.html">Mentorship</a>
+                        </li>
+                        <li>
+                            <a href="#">News</a>
+                        </li>
+                        <li>
+                            <a href="./gallery.html">Past Events</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="socials max-w-[316px] mt-[72px]">
+                <ul class="flex flex-row justify-between m-auto">
+                    <li class="flex justify-center">
+                        <a class="flex justify-center" href="#"><img class="w-full m-auto"
+                                src="./images/devicon_twitter.png" alt="x_twitter icon"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="w-full" src="./images/mdi_linkedin.png" alt="linkedin icon"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="w-full" src="./images/ri_instagram-line.png" alt="instagram icon"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="w-full" src="./images/mingcute_youtube-line.png" alt="youtube icon"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="w-full" src="./images/mdi_facebook.png" alt="facebook icon"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="copyright font-extralight text-xs mt-[72px]">
+                <p>Ghana Data Science Summit 2024 | All Rights Reserved</p>
+            </div>
+        </div>
+
+        <!--Desktop footer-->
+        <div class="footer-md hidden md:block">
+            <div class="flex flex-row justify-between max-w-[1400px] m-auto">
+                <div class="flex flex-row w-2/5 max-w-[420px] max-h-28">
+                    <img loading="lazy" src="./images/gdss-new-logo 1.png" alt="gdss-new-logo">
+                    <img class="ml-12" loading="lazy" src="./images/indabax 1.png" alt="indabax logo">
+                </div>
+
+                <div class="footer-links w-2/5 max-w-[1000px]">
+                    <div class="font-extralight flex flex-row justify-between text-base">
+                        <ul>
+                            <li>
+                                <a href="./schedule.html">Schedule</a>
+                            </li>
+                            <li class="mt-[3.5rem]">
+                                <a href="#">Speakers</a>
+                            </li>
+                            <li class="mt-[3.5rem]">
+                                <a href="./travel_guide.html">Travel</a>
+                            </li>
+                            <li class="mt-[3.5rem]">
+                                <a href="#">Souvenirs</a>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <a href="#">Sponsors</a>
+                            </li>
+                            <li class="mt-[3.5rem]">
+                                <a href="./mentorship.html">Mentors</a>
+                            </li>
+                            <li class="mt-[3.5rem]">
+                                <a href="#">Resources</a>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <a href="./gallery.html">Past Events</a>
+                            </li>
+                            <li class="mt-[3.5rem]">
+                                <a href="#">FAQs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full bg-white h-[3px] mt-32 max-w-[1440px] m-auto">
+            </div>
+
+            <div class="socials mt-6 m-auto max-w-[1440px]">
+                <div class="flex flex-row justify-between w-full">
+                    <div class="copyright font-extralight text-base">
+                        <p>Ghana Data Science Summit 2024 | All Rights Reserved</p>
+                    </div>
+
+                    <ul class="flex flex-row justify-between w-[230px]">
+                        <li class="flex justify-center">
+                            <a class="flex justify-center" href="#"><img class="w-full m-auto"
+                                    src="./images/devicon_twitter.png" alt="x_twitter icon"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="w-full" src="./images/mdi_linkedin.png" alt="linkedin icon"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="w-full" src="./images/ri_instagram-line.png"
+                                    alt="instagram icon"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="w-full" src="./images/mingcute_youtube-line.png"
+                                    alt="youtube icon"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="w-full" src="./images/mdi_facebook.png" alt="facebook icon"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./app.js"></script>
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
+</body>
+
+</html>

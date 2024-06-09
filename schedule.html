@@ -30,7 +30,7 @@
       <nav class="flex flex-row justify-between hidden md:inline-block w-full max-w-[1000px]">
         <ul class="flex items-center w-full justify-around">
           <li>
-            <a class="text-[#000D30] text-xl" href="./schedule.html">Schedule</a>
+            <a class="text-[#DE0220] font-semibold text-xl" href="./schedule.html">Schedule</a>
           </li>
           <li>
             <a class="text-[#000D30] text-xl" href="./speakers.html">Speakers</a>
@@ -42,7 +42,8 @@
             <a class="text-[#000D30] text-xl" href="./gallery.html">Gallery</a>
           </li>
           <li>
-            <a class="text-[#FFFFFF] text-xl bg-[#DE0220] py-[16px] px-[32px] font-normal" href="/register">Register</a>
+            <a class="text-[#FFFFFF] text-xl bg-[#DE0220] px-5 py-3 font-normal hover:bg-[#000D30]"
+              href="/register">Register</a>
           </li>
         </ul>
       </nav>
@@ -57,20 +58,20 @@
     <!-- modal mobile screen -->
     <div id="modal" class="fixed inset-0 hidden items-center justify-end transition-opacity duration-300 z-[999]">
       <div id="modalContent"
-        class="bg-[#000D30] w-2/3 h-full mt-20 transform translate-x-full transition-transform duration-300">
+        class="bg-[#000D30] w-[250px] h-full mt-20 transform translate-x-full transition-transform duration-300">
         <div class="flex justify-end p-4">
           <!-- <h2 class="text-xl font-semibold">Modal Title</h2> -->
           <button id="closeModalBtn" class="text-white text-xl flex-end">
             <i class="fa-solid fa-xmark fa-2xl"></i>
           </button>
         </div>
-        <div class="p-8">
-          <ul class="text-white text-xl font-extralight flex flex-col gap-6">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./schedule.html">Schedule</a></li>
-            <li><a href="./speakers.html">Speakers</a></li>
-            <li><a href="./travel_guide.html">Travel Guide</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
+        <div>
+          <ul class="text-white text-xl font-extralight flex flex-col gap-5">
+            <li class="p-4 hover:bg-white hover:text-[#000D30]"><a href="./index.html">Home</a></li>
+            <li class="p-4 hover:bg-white hover:text-[#000D30]"><a href="./schedule.html">Schedule</a></li>
+            <li class="p-4 hover:bg-white hover:text-[#000D30]"><a href="./speakers.html">Speakers</a></li>
+            <li class="p-4 hover:bg-white hover:text-[#000D30]"><a href="./travel_guide.html">Travel Guide</a></li>
+            <li class="p-4 hover:bg-white hover:text-[#000D30]"><a href="./gallery.html">Gallery</a></li>
           </ul>
         </div>
       </div>
@@ -78,7 +79,7 @@
   </section>
 
   <!--Sub Heading-->
-  <div class="max-w-screen-md text-center mx-auto px-sm-5">
+  <div class="max-w-[930px] text-center mx-auto px-5">
     <p class="font-bold font-inter text-3xl">
       Panel Discussions, Keynotes, Tutorial Sessions, Hackathons, and fun
       activities at the Ghana Data Science Summit 2024
@@ -86,18 +87,18 @@
   </div>
 
   <!--Day Tabs-->
-  <div class="flex md:justify-center overflow-scroll my-10">
+  <div class="flex md:justify-center overflow-scroll no-scrollbar my-10">
     <div id="tab1" style="min-width: 248px"
       class="active border border-black py-4 px-19 ml-4 mr-16 text-center font-bold bg-[#DE0220] text-white">
-      Day 1
+      DAY 1
     </div>
     <div id="tab2" style="min-width: 248px"
       class="border border-black py-4 px-19 mr-16 text-center font-bold bg-[#DE0220] text-white">
-      Day 2
+      DAY 2
     </div>
     <div id="tab3" style="min-width: 248px"
       class="border border-black py-4 px-19 mr-16 text-center font-bold bg-[#DE0220] text-white">
-      Day 3
+      DAY 3
     </div>
   </div>
 
@@ -116,7 +117,8 @@
       </p>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">8:00 - 9:00</p>
       </div>
@@ -125,7 +127,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">9:00 - 9:30</p>
       </div>
@@ -145,7 +148,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">9:30 - 10:15</p>
       </div>
@@ -167,7 +171,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">10:15 - 10:30</p>
       </div>
@@ -178,7 +183,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">10:30 - 10:45</p>
       </div>
@@ -187,7 +193,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">10:45 - 11:00</p>
       </div>
@@ -198,7 +205,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">11:00 - 11:45</p>
       </div>
@@ -216,7 +224,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">11:45 - 12:30</p>
       </div>
@@ -227,7 +236,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">12:30 - 14:00</p>
       </div>
@@ -236,7 +246,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">14:00 - 14:45</p>
       </div>
@@ -254,7 +265,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">14:45 - 15:15</p>
       </div>
@@ -263,7 +275,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">15:15 - 16:00</p>
       </div>
@@ -274,7 +287,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">16:00 - 16:15</p>
       </div>
@@ -283,7 +297,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">17:00 - 18:00</p>
       </div>
@@ -310,7 +325,8 @@
       </p>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">8:00 - 9:00</p>
       </div>
@@ -319,7 +335,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">9:00 - 9:45</p>
       </div>
@@ -343,7 +360,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">9:45 - 10:30</p>
       </div>
@@ -361,7 +379,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">10:30 - 12:30</p>
       </div>
@@ -412,7 +431,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">12:30 - 14:00</p>
       </div>
@@ -421,7 +441,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">14:00 - 15:15</p>
       </div>
@@ -430,7 +451,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">15:15 - 15:30</p>
       </div>
@@ -439,7 +461,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">15:30 - 16:45</p>
       </div>
@@ -448,7 +471,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">17:00</p>
       </div>
@@ -473,7 +497,8 @@
       </p>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">8:00 - 9:00</p>
       </div>
@@ -482,7 +507,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">9:00 - 9:45</p>
       </div>
@@ -504,7 +530,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">9:45 - 10:30</p>
       </div>
@@ -522,7 +549,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">10:30 - 11:30</p>
       </div>
@@ -531,7 +559,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">11:30 - 13:00</p>
       </div>
@@ -565,7 +594,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">13:00 - 13:10</p>
       </div>
@@ -574,7 +604,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">13:10 - 14:40</p>
       </div>
@@ -583,7 +614,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">14:40 - 16:10</p>
       </div>
@@ -592,7 +624,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">16:10 - 16:40</p>
       </div>
@@ -601,7 +634,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">16:40 - 17:25</p>
       </div>
@@ -619,7 +653,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">17:25 - 18:10</p>
       </div>
@@ -628,7 +663,8 @@
       </div>
     </div>
 
-    <div class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6">
+    <div
+      class="body flex flex-auto px-4 py-5 md:py-10 justify-center md:my-12 my-6 hover:border-2 hover:border-[#000D30] mx-5">
       <div class="time w-1/4 max-w-[200px]">
         <p class="body-p text-[#DE0220] font-bold">20:00</p>
       </div>
@@ -639,7 +675,7 @@
   </div>
 
   <!--Footer-->
-  <section class="footer bg-[#000D30] py-16 md:py-28 px-5 md:px-20 text-white">
+  <section class="footer bg-[#000D30] py-16 md:py-28 px-5 md:px-10 text-white">
     <!--Mobile footer-->
     <div class="md:hidden">
       <div class="flex flex-row w-[110px]">
@@ -652,16 +688,16 @@
         <div class="font-extralight flex flex-row justify-between mt-9 text-base">
           <ul>
             <li>
-              <a href="#">Schedule</a>
+              <a href="./schedule.html">Schedule</a>
             </li>
             <li>
-              <a href="#">Speakers</a>
+              <a href="./speakers.html">Speakers</a>
             </li>
             <li>
-              <a href="#">Travel</a>
+              <a href="./travel_guide.html">Travel</a>
             </li>
             <li>
-              <a href="#">Gallery</a>
+              <a href="./gallery.html">Gallery</a>
             </li>
           </ul>
 
@@ -670,13 +706,13 @@
               <a href="#">Sponsors</a>
             </li>
             <li>
-              <a href="#">Mentorship</a>
+              <a href="./mentorship.html">Mentorship</a>
             </li>
             <li>
               <a href="#">News</a>
             </li>
             <li>
-              <a href="#">Past Events</a>
+              <a href="./gallery.html">Past Events</a>
             </li>
             <li>
               <a href="#">FAQs</a>
@@ -713,7 +749,7 @@
 
     <!--Desktop footer-->
     <div class="footer-md hidden md:block">
-      <div class="flex flex-row justify-between max-w-[1400px]">
+      <div class="flex flex-row justify-between max-w-[1400px] m-auto">
         <div class="flex flex-row w-2/5 max-w-[420px] max-h-28">
           <img loading="lazy" src="./images/gdss-new-logo 1.png" alt="gdss-new-logo">
           <img class="ml-12" loading="lazy" src="./images/indabax 1.png" alt="indabax logo">
@@ -723,13 +759,13 @@
           <div class="font-extralight flex flex-row justify-between text-base">
             <ul>
               <li>
-                <a href="#">Schedule</a>
+                <a href="./schedule.html">Schedule</a>
               </li>
               <li class="mt-[3.5rem]">
                 <a href="#">Speakers</a>
               </li>
               <li class="mt-[3.5rem]">
-                <a href="#">Travel</a>
+                <a href="./travel_guide.html">Travel</a>
               </li>
               <li class="mt-[3.5rem]">
                 <a href="#">Souvenirs</a>
@@ -741,7 +777,7 @@
                 <a href="#">Sponsors</a>
               </li>
               <li class="mt-[3.5rem]">
-                <a href="#">Mentors</a>
+                <a href="./mentorship.html">Mentors</a>
               </li>
               <li class="mt-[3.5rem]">
                 <a href="#">Resources</a>
@@ -750,7 +786,7 @@
 
             <ul>
               <li>
-                <a href="#">Past Events</a>
+                <a href="./gallery.html">Past Events</a>
               </li>
               <li class="mt-[3.5rem]">
                 <a href="#">FAQs</a>
@@ -760,16 +796,16 @@
         </div>
       </div>
 
-      <div class="w-full bg-white h-[3px] mt-32">
+      <div class="w-full bg-white h-[3px] mt-32 max-w-[1440px] m-auto">
       </div>
 
-      <div class="socials mt-6">
+      <div class="socials mt-6 m-auto max-w-[1440px]">
         <div class="flex flex-row justify-between w-full">
           <div class="copyright font-extralight text-base">
             <p>Ghana Data Science Summit 2024 | All Rights Reserved</p>
           </div>
 
-          <ul class="flex flex-row justify-between w-[228px]">
+          <ul class="flex flex-row justify-between w-[230px]">
             <li class="flex justify-center">
               <a class="flex justify-center" href="#"><img class="w-full m-auto" src="./images/devicon_twitter.png"
                   alt="x_twitter icon"></a>
@@ -791,7 +827,6 @@
       </div>
     </div>
   </section>
-
   <script src="app.js"></script>
 </body>
 

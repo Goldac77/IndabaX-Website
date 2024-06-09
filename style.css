@@ -1,4 +1,5 @@
 @layer utilities {
+
   /*Footer styling*/
   .footer {
     font-family: Inter;
@@ -41,6 +42,7 @@
   #tab2,
   #tab3 {
     font-family: RBNo;
+    font-size: 24px;
   }
 
   .body-p {
@@ -65,6 +67,15 @@
     font-family: Inter;
   }
 
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
   /*Home page*/
   #faq {
     font-family: Inter;
@@ -74,11 +85,13 @@
     font-family: Inter;
   }
 
-  #happens p, #happens span{
+  #happens p,
+  #happens span {
     font-size: clamp(33px, 4vw, 46px) !important;
   }
 
-  #home-speaker p, #home-event p {
+  #home-speaker p,
+  #home-event p {
     font-size: clamp(18px, 1.5vw, 16px);
   }
 
@@ -95,8 +108,44 @@
     font-size: clamp(6px, 1rem, 16px);
   }
 
+  #topic_1_div:hover {
+    background-color: #DE0220;
+    color: #FFFFFF;
+  }
+
+  #topic_1_div:hover #topic_1_img_div {
+    opacity: 0.5;
+  }
+
+  #topic_2_div:hover {
+    background-color: #000D30;
+    color: #FFFFFF;
+  }
+
+  #topic_2_div:hover #topic_2_img_div {
+    opacity: 0.5;
+  }
+
+  #topic_3_div:hover {
+    background-color: #DE0220;
+    color: #FFFFFF;
+  }
+
+  #topic_3_div:hover #topic_3_img_div {
+    opacity: 0.5;
+  }
+
+  #topic_4_div:hover {
+    background-color: #000D30;
+    color: #FFFFFF;
+  }
+
+  #topic_4_div:hover #topic_4_img_div {
+    opacity: 0.5;
+  }
+
   /*Travel guide*/
-  #travel-header p{
+  #travel-header p {
     font-size: clamp(24px, 3rem, 48px);
     font-weight: 700;
   }
@@ -108,5 +157,31 @@
   #travel-p-head {
     font-size: clamp(16px, 3rem, 32px);
     font-weight: 700;
+  }
+
+  /*Mentorship Page*/
+  #mentorship-header p {
+    font-size: clamp(24px, 3rem, 48px);
+    font-weight: 700;
+    line-height: 55px;
+  }
+
+  #mentorship-p-head {
+    font-size: clamp(16px, 1.5rem, 32px);
+    font-weight: 700;
+  }
+
+  #mentorship-benefits li {
+    font-size: clamp(12px, 1rem, 16px);
+  }
+
+  #mentorship-btn-div a {
+    font-size: clamp(12px, 1rem, 16px);
+  }
+
+  #mentorship-questions p {
+    font-size: clamp(48px, 2rem, 64px);
+    font-weight: 700;
+    line-height: 56px;
   }
 }

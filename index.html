@@ -41,7 +41,8 @@
             <a class="text-[#000D30] text-xl" href="./gallery.html">Gallery</a>
           </li>
           <li>
-            <a class="text-[#FFFFFF] text-xl bg-[#DE0220] py-[16px] px-[32px] font-normal" href="/register">Register</a>
+            <a class="text-[#FFFFFF] text-xl bg-[#DE0220] px-5 py-3 font-normal hover:bg-[#000D30]"
+              href="/register">Register</a>
           </li>
         </ul>
       </nav>
@@ -56,20 +57,20 @@
     <!-- modal mobile screen -->
     <div id="modal" class="fixed inset-0 hidden items-center justify-end transition-opacity duration-300 z-[999]">
       <div id="modalContent"
-        class="bg-[#000D30] w-2/3 h-full mt-20 transform translate-x-full transition-transform duration-300">
+        class="bg-[#000D30] w-[250px] h-full mt-20 transform translate-x-full transition-transform duration-300">
         <div class="flex justify-end p-4">
           <!-- <h2 class="text-xl font-semibold">Modal Title</h2> -->
           <button id="closeModalBtn" class="text-white text-xl flex-end">
             <i class="fa-solid fa-xmark fa-2xl"></i>
           </button>
         </div>
-        <div class="p-8">
-          <ul class="text-white text-xl font-extralight flex flex-col gap-6">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./schedule.html">Schedule</a></li>
-            <li><a href="./speakers.html">Speakers</a></li>
-            <li><a href="./travel_guide.html">Travel Guide</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
+        <div>
+          <ul class="text-white text-xl font-extralight flex flex-col gap-5">
+            <li class="p-4 hover:bg-white hover:text-[#000D30]"><a href="./index.html">Home</a></li>
+            <li class="p-4 hover:bg-white hover:text-[#000D30]"><a href="./schedule.html">Schedule</a></li>
+            <li class="p-4 hover:bg-white hover:text-[#000D30]"><a href="./speakers.html">Speakers</a></li>
+            <li class="p-4 hover:bg-white hover:text-[#000D30]"><a href="./travel_guide.html">Travel Guide</a></li>
+            <li class="p-4 hover:bg-white hover:text-[#000D30]"><a href="./gallery.html">Gallery</a></li>
           </ul>
         </div>
       </div>
@@ -78,11 +79,11 @@
 
   <div class="overflow-x-hidden">
     <!-- hero -->
-    <section class="my-4 max-w-md mx-auto md:max-w-[900px] mx-10">
+    <section class="my-4 max-w-md mx-auto md:max-w-[900px] mx-10 px-5 text-center">
       <h2 class="text-[#000D30] text-4xl font-extrabold leading-none md:text-7xl md:font-black text-center z-[500]">
         Unleasing the potential of AI through grassroots engagement
       </h2>
-      <img src="./images/Line-9.png" class="-mt-[20px] inline-block -z-50 mx-auto" alt="signature" />
+      <img src="./images/Line-9.png" class="mt-[-20px] inline-block z-50 m-auto" alt="signature" />
       <!-- venue and date -->
       <div class="flex mx-auto w-full items-center gap-4 justify-around my-8 text-xl flex-col md:flex-row">
         <div class="flex items-center gap-4">
@@ -95,10 +96,9 @@
         </div>
       </div>
       <!-- conference schedule button -->
-      <div class="w-full flex">
-        <button class="mx-auto inline-block bg-[#DE0220] px-6 py-4 text-lg text-white">
-          <a href="./schedule.html">See Conference Schedule</a>
-        </button>
+      <div class="w-full flex mt-10 mb-16">
+        <a class="mx-auto inline-block bg-[#DE0220] px-5 py-3 text-lg text-white hover:bg-[#000D30]"
+          href="./schedule.html">See Conference Schedule</a>
       </div>
       <!-- sponsors -->
       <div class="my-8 items-center justify-between hidden md:flex">
@@ -159,12 +159,10 @@
             </p>
           </div>
           <div class="flex gap-4 self-start mt-7">
-            <button class="inline-block bg-[#DE0220] px-3 py-2 md:px-5 md:py-3 text-lg text-white">
-              <a href="./schedule.html" class="min-w-fit">See last year's event</a>
-            </button>
-            <button class="hidden md:inline-block bg-none border px-3 py-2 md:px-5 md:py-3 text-lg text-white">
-              <a href="/share">Share this event</a>
-            </button>
+            <a class="inline-block bg-[#DE0220] px-3 py-2 md:px-5 md:py-3 text-lg text-white min-w-fit hover:bg-white hover:text-[#000D30]"
+              href="./schedule.html">See last year's event</a>
+            <a class="hidden md:inline-block bg-none border px-3 py-2 md:px-5 md:py-3 text-lg text-white hover:bg-white hover:text-[#000D30]"
+              href="/share">Share this event</a>
           </div>
         </div>
         <!-- venue card -->
@@ -196,7 +194,8 @@
             <div class="mb-4 mt-14">
               <span>Event Date</span>
               <p class="text-3xl font-black text-[#DE0220] my-2">July 17 - 19, 2024</p>
-              <span>Add to Calendar <i class="fa-solid fa-arrow-up rotate-[45deg]"></i> </span>
+              <a class="hover:underline hover:cursor-default" href="#">Add to Calendar <i
+                  class="fa-solid fa-arrow-up rotate-[45deg]"></i> </a>
             </div>
 
             <div class="mt-14">
@@ -204,7 +203,8 @@
               <p class="text-2xl font-black text-[#DE0220] leading-7 my-2">
                 Kwame Nkrumah <br> University of Science <br> & Technology
               </p>
-              <span>Get directions to venue <i class="fa-solid fa-arrow-up rotate-[45deg]"></i> </span>
+              <a class="hover:underline hover:cursor-default" href="#">Get directions to venue <i
+                  class="fa-solid fa-arrow-up rotate-[45deg]"></i> </a>
             </div>
           </div>
         </div>
@@ -315,9 +315,8 @@
         </div>
       </div>
       <div class="text-center md:text-left max-w-[300px] m-auto md:m-0 md:max-w-full">
-        <button class="mt-4 inline-block bg-[#DE0220] px-6 py-4 text-lg text-white md:mx-10">
-          <a href="/speakers">View confirmed speakers for IndabaX Ghana 2024</a>
-        </button>
+        <a class="mt-4 inline-block bg-[#DE0220] px-6 py-4 text-lg text-white md:mx-10 hover:bg-[#000D30]"
+          href="./speakers.html">View confirmed speakers for IndabaX Ghana 2024</a>
       </div>
     </section>
     <!-- Session Topics -->
@@ -330,19 +329,21 @@
       <div class="flex flex-col md:flex-row flex-wrap md:justify-between mb-6 md:px-10 max-w-[1300px]">
         <div class="md:w-1/2">
           <!-- topic 1 -->
-          <div class="flex gap-2 items-center mt-3">
-            <div class="bg-[#DE0220] w-1/4 flex items-center justify-center inline-block min-w-[50px] max-w-[80px]"
+          <div id="topic_1_div" class="flex gap-2 items-center mt-3 w-[85%]">
+            <div id="topic_1_img_div"
+              class="bg-[#DE0220] w-1/4 flex items-center justify-center inline-block min-w-[50px] max-w-[80px]"
               style="padding: clamp(15px, 1%, 40px);">
               <img src="./images/Vector(4).svg" alt="love" />
             </div>
-            <div class="text-xl leading-5 md:leading-7 w-3/4 font-semibold">
+            <div id="topic_1_p" class="text-xl leading-5 md:leading-7 w-3/4 font-semibold">
               <p>Data Science for Public Health:</p>
               <p>Case Studies from the Front Lines</p>
             </div>
           </div>
-          <!-- topic 3 -->
-          <div class="flex gap-2 items-center mt-3">
-            <div class="bg-[#000D30] w-1/4 flex items-center justify-center inline-block min-w-[70px] max-w-[80px]"
+          <!-- topic 2 -->
+          <div id="topic_2_div" class="flex gap-2 items-center mt-3 w-[85%]">
+            <div id="topic_2_img_div"
+              class="bg-[#000D30] w-1/4 flex items-center justify-center inline-block min-w-[70px] max-w-[80px]"
               style="padding: clamp(15px, 1%, 40px);">
               <img src="./images/Vector(5).svg" alt="love" />
             </div>
@@ -355,8 +356,9 @@
 
         <div class="md:w-1/2 mt-0">
           <!-- topic 3 -->
-          <div class="flex gap-2 items-center mt-3">
-            <div class="bg-[#DE0220] w-1/4 flex items-center justify-center inline-block min-w-[50px] max-w-[80px]"
+          <div id="topic_3_div" class="flex gap-2 items-center mt-3 w-[85%]">
+            <div id="topic_3_img_div"
+              class="bg-[#DE0220] w-1/4 flex items-center justify-center inline-block min-w-[50px] max-w-[80px]"
               style="padding: clamp(15px, 1%, 40px);">
               <img src="./images/Vector(2).svg" alt="love" />
             </div>
@@ -366,8 +368,9 @@
             </div>
           </div>
           <!-- topic four -->
-          <div class="flex gap-2 items-center mt-3">
-            <div class="bg-[#000D30] w-1/4 flex items-center justify-center inline-block min-w-[50px] max-w-[80px]"
+          <div id="topic_4_div" class="flex gap-2 items-center mt-3 w-[85%]">
+            <div id="topic_4_img_div"
+              class="bg-[#000D30] w-1/4 flex items-center justify-center inline-block min-w-[50px] max-w-[80px]"
               style="padding: clamp(15px, 1%, 40px);">
               <img src="./images/carbon_machine-learning-model.svg" alt="love" />
             </div>
@@ -379,9 +382,8 @@
         </div>
       </div>
       <div class="text-center md:text-left max-w-[300px] m-auto md:m-0 md:max-w-full">
-        <button class="mt-4 inline-block bg-[#DE0220] px-6 py-4 text-base text-white md:mx-10">
-          <a href="./schedule.html">View full programme schedule</a>
-        </button>
+        <a class="mt-4 inline-block bg-[#DE0220] px-6 py-4 text-base text-white md:mx-10 hover:bg-[#000D30]"
+          href="./schedule.html">View full programme schedule</a>
       </div>
     </section>
     <!-- sponsors -->
@@ -417,9 +419,9 @@
           <h1 class="text-[#000D30] text-4xl font-bold">
             Why Sponsor <br />IndabaX Ghana?
           </h1>
-          <button class="bg-[#DE0220] text-white px-5 py-2 my-5">
-            Become a Sponsor
-          </button>
+          <div class="my-8">
+            <a href="#" class="bg-[#DE0220] text-white px-5 py-3 hover:bg-[#000D30]">Become a Sponsor</a>
+          </div>
         </div>
         <div style="box-shadow: 15px 15px black" class="flex text-center justify-end border-black max-w-[760px]">
           <div class="border border-black w-[25%] p-4">
@@ -467,9 +469,11 @@
             AI, ML professionals and industry experts through personalized
             guidance, hands-on projects, and career development opportunities.
           </p>
-          <button class="bg-[#DE0220] text-white px-5 py-1 mb-5 lg:py-3 my-5">
-            Learn more
-          </button>
+          <div class="my-7">
+            <a href="#" class="bg-[#DE0220] text-white px-5 py-1 mb-5 lg:py-3 my-5 hover:bg-white hover:text-[#000D30]">
+              Learn more
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -488,9 +492,11 @@
           AI, ML professionals and industry experts through personalized
           guidance, hands-on projects, and career development opportunities.
         </p>
-        <button class="w-fit bg-[#DE0220] text-white px-3 py-2 my-5">
-          Learn more
-        </button>
+        <div class="my-7">
+          <a href="#" class="w-fit bg-[#DE0220] text-white px-3 py-2 my-5 hover:bg-[#000D30]">
+            Learn more
+          </a>
+        </div>
       </div>
     </section>
 
@@ -595,7 +601,7 @@
 
 
   <!--Footer-->
-  <section class="footer bg-[#000D30] py-16 md:py-28 px-5 md:px-20 text-white">
+  <section class="footer bg-[#000D30] py-16 md:py-28 px-5 md:px-10 text-white">
     <!--Mobile footer-->
     <div class="md:hidden">
       <div class="flex flex-row w-[110px]">
@@ -608,16 +614,16 @@
         <div class="font-extralight flex flex-row justify-between mt-9 text-base">
           <ul>
             <li>
-              <a href="#">Schedule</a>
+              <a href="./schedule.html">Schedule</a>
             </li>
             <li>
-              <a href="#">Speakers</a>
+              <a href="./speakers.html">Speakers</a>
             </li>
             <li>
-              <a href="#">Travel</a>
+              <a href="./travel_guide.html">Travel</a>
             </li>
             <li>
-              <a href="#">Gallery</a>
+              <a href="./gallery.html">Gallery</a>
             </li>
           </ul>
 
@@ -626,13 +632,13 @@
               <a href="#">Sponsors</a>
             </li>
             <li>
-              <a href="#">Mentorship</a>
+              <a href="./mentorship.html">Mentorship</a>
             </li>
             <li>
               <a href="#">News</a>
             </li>
             <li>
-              <a href="#">Past Events</a>
+              <a href="./gallery.html">Past Events</a>
             </li>
             <li>
               <a href="#">FAQs</a>
@@ -669,7 +675,7 @@
 
     <!--Desktop footer-->
     <div class="footer-md hidden md:block">
-      <div class="flex flex-row justify-between max-w-[1400px]">
+      <div class="flex flex-row justify-between max-w-[1400px] m-auto">
         <div class="flex flex-row w-2/5 max-w-[420px] max-h-28">
           <img loading="lazy" src="./images/gdss-new-logo 1.png" alt="gdss-new-logo">
           <img class="ml-12" loading="lazy" src="./images/indabax 1.png" alt="indabax logo">
@@ -679,13 +685,13 @@
           <div class="font-extralight flex flex-row justify-between text-base">
             <ul>
               <li>
-                <a href="#">Schedule</a>
+                <a href="./schedule.html">Schedule</a>
               </li>
               <li class="mt-[3.5rem]">
                 <a href="#">Speakers</a>
               </li>
               <li class="mt-[3.5rem]">
-                <a href="#">Travel</a>
+                <a href="./travel_guide.html">Travel</a>
               </li>
               <li class="mt-[3.5rem]">
                 <a href="#">Souvenirs</a>
@@ -697,7 +703,7 @@
                 <a href="#">Sponsors</a>
               </li>
               <li class="mt-[3.5rem]">
-                <a href="#">Mentors</a>
+                <a href="./mentorship.html">Mentors</a>
               </li>
               <li class="mt-[3.5rem]">
                 <a href="#">Resources</a>
@@ -706,7 +712,7 @@
 
             <ul>
               <li>
-                <a href="#">Past Events</a>
+                <a href="./gallery.html">Past Events</a>
               </li>
               <li class="mt-[3.5rem]">
                 <a href="#">FAQs</a>
@@ -716,16 +722,16 @@
         </div>
       </div>
 
-      <div class="w-full bg-white h-[3px] mt-32">
+      <div class="w-full bg-white h-[3px] mt-32 max-w-[1440px] m-auto">
       </div>
 
-      <div class="socials mt-6">
+      <div class="socials mt-6 m-auto max-w-[1440px]">
         <div class="flex flex-row justify-between w-full">
           <div class="copyright font-extralight text-base">
             <p>Ghana Data Science Summit 2024 | All Rights Reserved</p>
           </div>
 
-          <ul class="flex flex-row justify-between w-[228px]">
+          <ul class="flex flex-row justify-between w-[230px]">
             <li class="flex justify-center">
               <a class="flex justify-center" href="#"><img class="w-full m-auto" src="./images/devicon_twitter.png"
                   alt="x_twitter icon"></a>
